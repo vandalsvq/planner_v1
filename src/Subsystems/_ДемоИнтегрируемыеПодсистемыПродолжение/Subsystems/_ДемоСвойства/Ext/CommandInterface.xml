@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<CommandsVisibility>
+		<Command name="CommonCommand._ДемоСвойстваНастройкаДополнительныеРеквизиты">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand._ДемоСвойстваНастройкаДополнительныеСведения">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand._ДемоСвойстваНастройкаДополнительныеРеквизиты">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="CommonCommand._ДемоСвойстваНастройкаДополнительныеСведения">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem._ДемоИнтегрируемыеПодсистемыПродолжение.Subsystem._ДемоСвойства.Subsystem.Использование</Subsystem>
+		<Subsystem>Subsystem._ДемоИнтегрируемыеПодсистемыПродолжение.Subsystem._ДемоСвойства.Subsystem.ВнутренниеДанные</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

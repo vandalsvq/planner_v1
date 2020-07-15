@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<CommandsVisibility>
+		<Command name="DataProcessor.ИнструментыРазработчикаПроверкаБСППередСборкой.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsOrder>
+		<Command name="DataProcessor.ИнструментыРазработчикаПроверкаБСППередСборкой.Command.ИнструментыРазработчикаПроверкаБСППередСборкой">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ИнструментыРазработчикаПроверкаБСППередСборкой.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПомощникВнедренияБСП.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.БазоваяФункциональность</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.ВариантыОтчетов</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.ВерсионированиеОбъектов</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.ДополнительныеОтчетыИОбработки</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.КонтактнаяИнформация</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.ОбменДанными</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.ОбновлениеВерсииИБ</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.ОбновлениеКонфигурации</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.ОценкаПроизводительности</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.Печать</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.ПоставляемыеДанные</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.РезервноеКопированиеИБ</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.УправлениеДоступом</Subsystem>
+		<Subsystem>Subsystem._ДемоИнструментыРазработчика.Subsystem.УправлениеИтогамиИАгрегатами</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

@@ -1,0 +1,39 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor">
+	<import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<import namespace="http://v8.1c.ru/8.1/data/enterprise"/>
+	<valueType name="DataTypeCode" base="xs:string" variety="Atomic" maxLength="50"/>
+	<valueType name="DataTypeDescription" base="xs:string" variety="Atomic" maxLength="150"/>
+	<valueType name="Name" base="xs:string" variety="Atomic" maxLength="150"/>
+	<valueType name="PropertyCode" base="xs:string" variety="Atomic" maxLength="50"/>
+	<valueType name="PropertyDescription" base="xs:string" variety="Atomic" maxLength="150"/>
+	<valueType name="Type" base="xs:string" variety="Atomic">
+		<enumeration>Background</enumeration>
+		<enumeration>Interactive</enumeration>
+		<enumeration>InteractiveAndBackground</enumeration>
+	</valueType>
+	<valueType name="Version" base="xs:string" variety="Atomic" maxLength="10"/>
+	<objectType name="ArrayOfDataType1_0_2">
+		<property xmlns:d3p1="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor" name="DataType" type="d3p1:DataType1_0_2" upperBound="-1"/>
+	</objectType>
+	<objectType name="DataType1_0_2" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor" name="Code" type="d3p1:DataTypeCode" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor" name="Description" type="d3p1:DataTypeDescription" lowerBound="0" form="Attribute"/>
+		<property name="Timeout" type="xs:decimal" lowerBound="0" fixed="false" default="0" form="Attribute"/>
+		<property name="SuppressNotifications" type="xs:boolean" lowerBound="0" fixed="false" default="false" form="Attribute"/>
+		<property xmlns:d3p1="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor" name="Property" type="d3p1:Property" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="Property">
+		<property xmlns:d3p1="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor" name="Code" type="d3p1:PropertyCode" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor" name="Description" type="d3p1:PropertyDescription" lowerBound="1" form="Attribute"/>
+		<property name="IsKey" type="xs:boolean" lowerBound="0" fixed="false" default="false" form="Attribute"/>
+	</objectType>
+	<objectType name="SuppliedDataProcessor1_0_2" ordered="false" sequenced="true">
+		<property name="VersionOfFormat" type="xs:string" lowerBound="1" form="Attribute" localName="Version"/>
+		<property xmlns:d3p1="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor" name="Name" type="d3p1:Name" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor" name="Version" type="d3p1:Version" lowerBound="0"/>
+		<property name="Description" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor" name="Type" type="d3p1:Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise" name="JobSchedule" type="d3p1:JobSchedule" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1c.ru/SaaS/SuppliedData/SuppliedDataProcessor" name="DataTypes" type="d3p1:ArrayOfDataType1_0_2" lowerBound="0"/>
+	</objectType>
+</package>

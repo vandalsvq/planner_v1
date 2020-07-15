@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.9">
+	<Item id="ef62627a-4fbe-4c01-a515-d2bbe8f2143a">
+		<Name>ВнешниеПользователи</Name>
+		<Code/>
+		<Description>Внешние пользователи</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВнешниеПользователи</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ГруппыВнешнихПользователей</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="30f5f2c5-fa4b-4eef-8f88-82f7eacfb29e">
+		<Name>_ДемоГруппыНоменклатуры</Name>
+		<Code/>
+		<Description>Демо: Группы номенклатуры</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef._ДемоГруппыДоступаНоменклатуры</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0c67e27c-511d-4554-94cb-785f20b953a5">
+		<Name>_ДемоГруппыПартнеров</Name>
+		<Code/>
+		<Description>Демо: Группы партнеров</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef._ДемоГруппыДоступаПартнеров</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0d7c8705-4c07-4aaf-a7d6-c62fe9ae5bd1">
+		<Name>_ДемоМестаХранения</Name>
+		<Code/>
+		<Description>Демо: Места хранения</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef._ДемоМестаХранения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9e0e0ce3-d510-48e7-8ab2-ddb2036bdd36">
+		<Name>_ДемоФизическиеЛица</Name>
+		<Code/>
+		<Description>Демо: Физические лица</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef._ДемоФизическиеЛица</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="20f59360-2ece-49d7-9dd3-c626ee14a36a">
+		<Name>_ДемоХозяйственныеОперации</Name>
+		<Code/>
+		<Description>Демо: Хозяйственные операции</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef._ДемоХозяйственныеОперации</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8febe066-ffc4-43f5-b697-24bde6c4a1d9">
+		<Name>ДополнительныеСведения</Name>
+		<Code/>
+		<Description>Дополнительные сведения</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c47cdf9a-d4f3-4d35-91a4-c8a3ef0ea816">
+		<Name>Организации</Name>
+		<Code/>
+		<Description>Организации</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cd687fc6-0a9e-4977-9fd1-70bbea344344">
+		<Name>ПапкиФайлов</Name>
+		<Code/>
+		<Description>Папки файлов</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ПапкиФайлов</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8673dcce-00d9-401b-9cbf-988c4672dc2e">
+		<Name>Пользователи</Name>
+		<Code/>
+		<Description>Пользователи</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ГруппыПользователей</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f00d679e-7030-476a-9c0e-4b752c2c70b5">
+		<Name>ПравоДобавления</Name>
+		<Code/>
+		<Description>Право добавления</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1c839282-ae72-47df-8880-e2cf2ed7c69f">
+		<Name>ПравоИзменения</Name>
+		<Code/>
+		<Description>Право изменения</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="be103f89-bfba-4f4c-878d-27365aa34c54">
+		<Name>ПравоЧтения</Name>
+		<Code/>
+		<Description>Право чтения</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c2d1d6fe-6ced-4f3f-8799-491e166a550a">
+		<Name>УчетныеЗаписиЭлектроннойПочты</Name>
+		<Code/>
+		<Description>Учетные записи электронной почты</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.УчетныеЗаписиЭлектроннойПочты</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

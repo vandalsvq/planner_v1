@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DataProcessor uuid="efe5acaf-da94-43f5-bc20-f4935f2b59ad">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject._ДемоОбработчикиВыгрузкиВБиблиотекаСтандартныхПодсистем21" category="Object">
+				<xr:TypeId>4bd4f6d2-9eeb-46a3-9fd2-1ebd93e25df0</xr:TypeId>
+				<xr:ValueId>050f49f1-77ce-467f-91d3-494424773630</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager._ДемоОбработчикиВыгрузкиВБиблиотекаСтандартныхПодсистем21" category="Manager">
+				<xr:TypeId>f099f2e3-98cf-48a1-8b82-d48b3903e5b6</xr:TypeId>
+				<xr:ValueId>cd5074ea-006b-44dd-95ba-695a0130b4fe</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>_ДемоОбработчикиВыгрузкиВБиблиотекаСтандартныхПодсистем21</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демо: Обработчики выгрузки в 1С:Библиотека стандартных подсистем, редакция 2.1</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor._ДемоОбработчикиВыгрузкиВБиблиотекаСтандартныхПодсистем21.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

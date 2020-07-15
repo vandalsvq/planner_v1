@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесьДень</dataPath>
+			<field>ВесьДень</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Календарь</dataPath>
+			<field>Календарь</field>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НачалоСобытия</dataPath>
+			<field>НачалоСобытия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОкончаниеСобытия</dataPath>
+			<field>ОкончаниеСобытия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Повторять</dataPath>
+			<field>Повторять</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Исполнитель</dataPath>
+			<field>Исполнитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполнитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Содержание</dataPath>
+			<field>Содержание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СобытиеНапоминания</dataPath>
+			<field>СобытиеНапоминания</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Событие напоминания</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовторВидОкончания</dataPath>
+			<field>ПовторВидОкончания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОригинальноеСобытие</dataPath>
+			<field>ОригинальноеСобытие</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОригинальноеНачалоСобытия</dataPath>
+			<field>ОригинальноеНачалоСобытия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НачалоКалендаря</dataPath>
+			<field>НачалоКалендаря</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало календаря</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовторОкончание</dataPath>
+			<field>ПовторОкончание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦветФона</dataPath>
+			<field>ЦветФона</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет фона</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаКонец</dataPath>
+			<field>ДатаКонец</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата конец</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесСобытия</dataPath>
+			<field>ВесСобытия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес события</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦветТекстаHEX</dataPath>
+			<field>ЦветТекстаHEX</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет текста HEX</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оригинал</dataPath>
+			<field>Оригинал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оригинал</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовторИнтервал</dataPath>
+			<field>ПовторИнтервал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повтор интервал</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыводитьВШапке</dataPath>
+			<field>ВыводитьВШапке</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить в шапке</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьНапоминания</dataPath>
+			<field>ЕстьНапоминания</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть напоминания</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цвет_З</dataPath>
+			<field>Цвет_З</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет З</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовторКоличество</dataPath>
+			<field>ПовторКоличество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цвет_К</dataPath>
+			<field>Цвет_К</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет К</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НачалоБлока</dataPath>
+			<field>НачалоБлока</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало блока</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачало</dataPath>
+			<field>ДатаНачало</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начало</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовторПериодичность</dataPath>
+			<field>ПовторПериодичность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерПовтора</dataPath>
+			<field>НомерПовтора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер повтора</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цвет_С</dataPath>
+			<field>Цвет_С</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет С</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонецКалендаря</dataPath>
+			<field>КонецКалендаря</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конец календаря</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовторПредставление</dataPath>
+			<field>ПовторПредставление</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦветHEX</dataPath>
+			<field>ЦветHEX</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет HEX</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовторДниПовторения</dataPath>
+			<field>ПовторДниПовторения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовторНачало</dataPath>
+			<field>ПовторНачало</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьУчастники</dataPath>
+			<field>ЕстьУчастники</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть участники</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВложенныйЗапрос.Ссылка,
+	ВложенныйЗапрос.Ссылка.Статус КАК Статус,
+	ВложенныйЗапрос.Ссылка.ОригинальноеСобытие КАК ОригинальноеСобытие,
+	ВложенныйЗапрос.Ссылка.НачалоСобытия КАК НачалоСобытия,
+	ВложенныйЗапрос.Ссылка.ОкончаниеСобытия КАК ОкончаниеСобытия,
+	ВложенныйЗапрос.Календарь
+ПОМЕСТИТЬ ВсеСобытия
+ИЗ
+	(ВЫБРАТЬ
+		СобытияКалендарей.Ссылка КАК Ссылка,
+		СобытияКалендарей.Календарь КАК Календарь
+	ИЗ
+		Справочник.СобытияПланировщика КАК СобытияКалендарей
+	ГДЕ
+		СобытияКалендарей.Календарь В(&amp;Календари)
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ РАЗЛИЧНЫЕ
+		СобытияУчастник.Событие,
+		СобытияУчастник.Календарь
+	ИЗ
+		РегистрСведений.УчастникиСобытийПланировщика КАК СобытияУчастник
+	ГДЕ
+		СобытияУчастник.Участник = &amp;Исполнитель
+		И СобытияУчастник.ВидУчастника &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыУчастниковСобытийПланировщика.Организатор)
+		И ВЫБОР
+				КОГДА СобытияУчастник.Календарь = ЗНАЧЕНИЕ(Справочник.КалендариПланировщика.ПустаяСсылка)
+					ТОГДА ИСТИНА
+				ИНАЧЕ СобытияУчастник.Календарь В (&amp;Календари)
+			КОНЕЦ) КАК ВложенныйЗапрос
+
+ИНДЕКСИРОВАТЬ ПО
+	Статус,
+	ОригинальноеСобытие
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Основа.Ссылка,
+	Основа.Календарь
+ПОМЕСТИТЬ МассивСобытий
+ИЗ
+	ВсеСобытия КАК Основа
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ГраницыСобытийПланировщика КАК ГраницыПериодов
+		ПО Основа.Ссылка = ГраницыПериодов.Событие
+ГДЕ
+	Основа.Статус &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыСобытийПланировщика.Отменено)
+	И Основа.ОригинальноеСобытие = ЗНАЧЕНИЕ(Справочник.СобытияПланировщика.ПустаяСсылка)
+	И ГраницыПериодов.НачалоПовторений &lt;= &amp;КонецПериода
+	И ГраницыПериодов.ОкончаниеПовторений &gt;= &amp;НачалоПериода
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Замещение.Ссылка,
+	Замещение.Календарь
+ИЗ
+	ВсеСобытия КАК Замещение
+ГДЕ
+	Замещение.ОригинальноеСобытие &lt;&gt; ЗНАЧЕНИЕ(Справочник.СобытияПланировщика.ПустаяСсылка)
+	И Замещение.НачалоСобытия &lt;= &amp;КонецПериода
+	И Замещение.ОкончаниеСобытия &gt;= &amp;НачалоПериода
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	НапоминанияСобытийПланировщика.Событие КАК Ссылка
+ПОМЕСТИТЬ Напоминания
+ИЗ
+	РегистрСведений.НапоминанияСобытийПланировщика КАК НапоминанияСобытийПланировщика
+ГДЕ
+	НапоминанияСобытийПланировщика.Событие В
+			(ВЫБРАТЬ
+				Т.Ссылка
+			ИЗ
+				МассивСобытий КАК Т)
+
+ИНДЕКСИРОВАТЬ ПО
+	Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	УчастникиСобытийПланировщика.Событие КАК Событие
+ПОМЕСТИТЬ Участники
+ИЗ
+	РегистрСведений.УчастникиСобытийПланировщика КАК УчастникиСобытийПланировщика
+ГДЕ
+	УчастникиСобытийПланировщика.Событие В
+			(ВЫБРАТЬ
+				Т.Ссылка
+			ИЗ
+				МассивСобытий КАК Т)
+	И НЕ УчастникиСобытийПланировщика.Организатор
+
+ИНДЕКСИРОВАТЬ ПО
+	Событие
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МассивСобытий.Ссылка КАК Ссылка,
+	СобытияПланировщика.ПометкаУдаления,
+	СобытияПланировщика.Владелец КАК Исполнитель,
+	СобытияПланировщика.Код,
+	СобытияПланировщика.Наименование,
+	СобытияПланировщика.ВесьДень,
+	СобытияПланировщика.НачалоСобытия,
+	СобытияПланировщика.ОкончаниеСобытия,
+	СобытияПланировщика.Статус,
+	МассивСобытий.Календарь,
+	ВЫБОР
+		КОГДА НЕ СобытияПланировщика.Календарь.Владелец = &amp;Исполнитель
+				И МассивСобытий.Календарь = ЗНАЧЕНИЕ(Справочник.КалендариПланировщика.ПустаяСсылка)
+			ТОГДА ЗНАЧЕНИЕ(Справочник.ЦветоваяГаммаПланировщика.Серый)
+		КОГДА СобытияПланировщика.ЦветФона = ЗНАЧЕНИЕ(Справочник.ЦветоваяГаммаПланировщика.ПустаяСсылка)
+			ТОГДА МассивСобытий.Календарь.ЦветФона
+		ИНАЧЕ СобытияПланировщика.ЦветФона
+	КОНЕЦ КАК ЦветФона,
+	СобытияПланировщика.ОригинальноеСобытие,
+	СобытияПланировщика.ОригинальноеНачалоСобытия,
+	СобытияПланировщика.ПовторВидОкончания,
+	СобытияПланировщика.ПовторДниПовторения,
+	ВЫБОР
+		КОГДА СобытияПланировщика.ПовторИнтервал = 0
+			ТОГДА 1
+		ИНАЧЕ СобытияПланировщика.ПовторИнтервал
+	КОНЕЦ КАК ПовторИнтервал,
+	СобытияПланировщика.ПовторКоличество,
+	СобытияПланировщика.ПовторНачало,
+	СобытияПланировщика.ПовторОкончание,
+	СобытияПланировщика.ПовторПериодичность,
+	СобытияПланировщика.ПовторПредставление,
+	СобытияПланировщика.Повторять,
+	ВЫБОР
+		КОГДА Напоминания.Ссылка ЕСТЬ NULL 
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ КАК ЕстьНапоминания,
+	ВЫБОР
+		КОГДА Участники.Событие ЕСТЬ NULL 
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ КАК ЕстьУчастники
+ПОМЕСТИТЬ СобытияКалендаря
+ИЗ
+	МассивСобытий КАК МассивСобытий
+		ЛЕВОЕ СОЕДИНЕНИЕ Напоминания КАК Напоминания
+		ПО МассивСобытий.Ссылка = Напоминания.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СобытияПланировщика КАК СобытияПланировщика
+		ПО МассивСобытий.Ссылка = СобытияПланировщика.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Участники КАК Участники
+		ПО МассивСобытий.Ссылка = Участники.Событие
+{ГДЕ
+	СобытияПланировщика.ПометкаУдаления,
+	СобытияПланировщика.Владелец КАК Исполнитель,
+	СобытияПланировщика.Наименование,
+	СобытияПланировщика.ВесьДень,
+	СобытияПланировщика.НачалоСобытия,
+	СобытияПланировщика.ОкончаниеСобытия,
+	СобытияПланировщика.Календарь.*,
+	СобытияПланировщика.Содержание,
+	СобытияПланировщика.НачалоСобытия,
+	СобытияПланировщика.ОкончаниеСобытия,
+	СобытияПланировщика.Повторять,
+	Напоминания.Ссылка КАК СобытиеНапоминания}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДанныеКалендаря.Ссылка,
+	ДанныеКалендаря.ПометкаУдаления,
+	ДанныеКалендаря.Исполнитель,
+	ДанныеКалендаря.Код,
+	ДанныеКалендаря.Наименование,
+	ДанныеКалендаря.ВесьДень,
+	ДанныеКалендаря.НачалоСобытия,
+	ДанныеКалендаря.ОкончаниеСобытия,
+	ДанныеКалендаря.Статус,
+	ДанныеКалендаря.Календарь,
+	ДанныеКалендаря.ЦветФона,
+	ДанныеКалендаря.ЦветФона.ЦветФонаHex КАК ЦветHEX,
+	ДанныеКалендаря.ЦветФона.ЦветТекстаHex КАК ЦветТекстаHEX,
+	ВЫБОР
+		КОГДА ДанныеКалендаря.НачалоСобытия &lt; &amp;НачалоПериода
+				ИЛИ ДанныеКалендаря.НачалоСобытия = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА &amp;НачалоПериода
+		ИНАЧЕ ДанныеКалендаря.НачалоСобытия
+	КОНЕЦ КАК НачалоКалендаря,
+	ВЫБОР
+		КОГДА ДанныеКалендаря.ОкончаниеСобытия &gt; &amp;КонецПериода
+				ИЛИ ДанныеКалендаря.ОкончаниеСобытия = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА &amp;КонецПериода
+		ИНАЧЕ ДанныеКалендаря.ОкончаниеСобытия
+	КОНЕЦ КАК КонецКалендаря,
+	ВЫБОР
+		КОГДА ДанныеКалендаря.ОригинальноеСобытие = ЗНАЧЕНИЕ(Справочник.СобытияПланировщика.ПустаяСсылка)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Оригинал,
+	ДанныеКалендаря.ОригинальноеСобытие,
+	ДанныеКалендаря.ОригинальноеНачалоСобытия,
+	ДанныеКалендаря.ПовторВидОкончания,
+	ДанныеКалендаря.ПовторДниПовторения,
+	ДанныеКалендаря.ПовторИнтервал,
+	ДанныеКалендаря.ПовторКоличество,
+	ДанныеКалендаря.ПовторНачало,
+	ДанныеКалендаря.ПовторОкончание,
+	ДанныеКалендаря.ПовторПериодичность,
+	ДанныеКалендаря.ПовторПредставление,
+	ДанныеКалендаря.Повторять,
+	ВЫБОР
+		КОГДА ДанныеКалендаря.ВесьДень
+			ТОГДА ИСТИНА
+		КОГДА РАЗНОСТЬДАТ(НАЧАЛОПЕРИОДА(ДанныеКалендаря.НачалоСобытия, ДЕНЬ), КОНЕЦПЕРИОДА(ДанныеКалендаря.ОкончаниеСобытия, ДЕНЬ), ДЕНЬ) &gt;= 1
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ВыводитьВШапке,
+	РАЗНОСТЬДАТ(ДанныеКалендаря.НачалоСобытия, ДанныеКалендаря.ОкончаниеСобытия, СЕКУНДА) КАК ВесСобытия,
+	0 КАК НачалоБлока,
+	ДАТАВРЕМЯ(1, 1, 1) КАК ДатаНачало,
+	ДАТАВРЕМЯ(1, 1, 1) КАК ДатаКонец,
+	0 КАК НомерПовтора,
+	ЕСТЬNULL(ДанныеКалендаря.ЦветФона.ЦветФонаКрасный, 0) КАК Цвет_К,
+	ЕСТЬNULL(ДанныеКалендаря.ЦветФона.ЦветФонаЗеленый, 0) КАК Цвет_З,
+	ЕСТЬNULL(ДанныеКалендаря.ЦветФона.ЦветФонаСиний, 0) КАК Цвет_С,
+	ЕСТЬNULL(ДанныеКалендаря.ЕстьНапоминания, ЛОЖЬ) КАК ЕстьНапоминания,
+	ЕСТЬNULL(ДанныеКалендаря.ЕстьУчастники, ЛОЖЬ) КАК ЕстьУчастники
+ИЗ
+	СобытияКалендаря КАК ДанныеКалендаря</query>
+	</dataSet>
+	<parameter>
+		<name>Исполнитель</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Исполнитель</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Календари</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Календари</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.КалендариПланировщика</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВесСобытия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВыводитьВШапке</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВесьДень</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НачалоКалендаря</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НачалоБлока</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонецКалендаря</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Исполнитель</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Календарь</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаНачало</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаКонец</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НачалоСобытия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Код</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерПовтора</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОкончаниеСобытия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Оригинал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОригинальноеНачалоСобытия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОригинальноеСобытие</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПовторВидОкончания</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПовторДниПовторения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПовторИнтервал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПовторКоличество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПовторНачало</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПовторОкончание</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПовторПериодичность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПовторПредставление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Повторять</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПометкаУдаления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Статус</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Наименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦветHEX</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦветТекстаHEX</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Цвет_З</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Цвет_К</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Цвет_С</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦветФона</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕстьНапоминания</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕстьУчастники</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

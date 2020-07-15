@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Правило сохранения...</v8:content>
+		</v8:item>
+	</Title>
+	<Height>6</Height>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗакрыть" id="34">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗакрытьФорму</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Закрыть</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="35"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияТекстВопроса1" id="16">
+			<TextColor>web:DarkRed</TextColor>
+			<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущее событие было изменено/удалено.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияТекстВопроса1КонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДекорацияТекстВопроса1РасширеннаяПодсказка" id="22"/>
+		</LabelDecoration>
+		<LabelDecoration name="ДекорацияТекстВопроса2" id="18">
+			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вы хотите сохранить изменения для:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияТекстВопроса2КонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ДекорацияТекстВопроса2РасширеннаяПодсказка" id="23"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаВыборОтвета" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выбор ответа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выбор ответа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыборОтветаРасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВсеСобытия" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа все события</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа все события</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВсеСобытияРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<Button name="ИзменитьВсеСобытия" id="5">
+							<Type>UsualButton</Type>
+							<Width>17</Width>
+							<CommandName>Form.Command.ИзменитьВсеСобытия</CommandName>
+							<ExtendedTooltip name="ИзменитьВсеСобытияРасширеннаяПодсказка" id="26"/>
+						</Button>
+						<LabelDecoration name="ДекорацияВсеСобытия" id="6">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Будут изменены/удалены все события включая повторы</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияВсеСобытияКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="ДекорацияВсеСобытияРасширеннаяПодсказка" id="27"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаТекущееСобытие" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа текущее событие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа текущее событие</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТекущееСобытиеРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<Button name="ИзменитьТекущееСобытие" id="9">
+							<Type>UsualButton</Type>
+							<Width>17</Width>
+							<CommandName>Form.Command.ИзменитьТекущееСобытие</CommandName>
+							<ExtendedTooltip name="ИзменитьТекущееСобытиеРасширеннаяПодсказка" id="29"/>
+						</Button>
+						<LabelDecoration name="ДекорацияТекущееСобытие" id="10">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Будет изменено/удалено только текущее событие</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияТекущееСобытиеКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ДекорацияТекущееСобытиеРасширеннаяПодсказка" id="30"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПоследующиеСобытия" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа последующие события</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа последующие события</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПоследующиеСобытияРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<Button name="ИзменитьПоследующиеСобытия" id="13">
+							<Type>UsualButton</Type>
+							<Width>17</Width>
+							<CommandName>Form.Command.ИзменитьПоследующиеСобытия</CommandName>
+							<ExtendedTooltip name="ИзменитьПоследующиеСобытияРасширеннаяПодсказка" id="32"/>
+						</Button>
+						<LabelDecoration name="ДекорацияПоследующиеСобытия" id="14">
+							<Width>35</Width>
+							<Height>2</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Будут изменены/удалены все последующие события после текущего</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияПоследующиеСобытияКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ДекорацияПоследующиеСобытияРасширеннаяПодсказка" id="33"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ИзменитьТекущееСобытие" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущее событие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить текущее событие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьТекущееСобытие</Action>
+		</Command>
+		<Command name="ИзменитьВсеСобытия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все события</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить все события</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьВсеСобытия</Action>
+		</Command>
+		<Command name="ИзменитьПоследующиеСобытия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последующие события</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить последующие события</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьПоследующиеСобытия</Action>
+		</Command>
+		<Command name="ЗакрытьФорму" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Close</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗакрытьФорму</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ОкончаниеСобытия">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ОкончаниеПовторений">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

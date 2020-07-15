@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Width>69</Width>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<Pages name="Инструменты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструменты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструменты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ИнструментыExtendedTooltip" id="29"/>
+			<ChildItems>
+				<Page name="НачальноеЗаполнениеПрофилей" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начальное заполнение профилей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начальное заполнение профилей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НачальноеЗаполнениеПрофилейExtendedTooltip" id="30"/>
+					<ChildItems>
+						<Button name="СформироватьОписаниеПрофилей" id="1">
+							<Type>UsualButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.СформироватьОписаниеПрофилей</CommandName>
+							<ExtendedTooltip name="СформироватьОписаниеПрофилейExtendedTooltip" id="31"/>
+						</Button>
+						<LabelDecoration name="Пояснение3" id="2">
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формирование фрагмента кода для начального заполнения профилей групп доступа, на основе профилей, имеющихся в этой информационной базе. 
+
+Фрагмент кода используется для вставки в процедуру ПриЗаполненииПоставляемыхПрофилейГруппДоступа общего модуля УправлениеДоступомПереопределяемый.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Пояснение3КонтекстноеМеню" id="3"/>
+							<ExtendedTooltip name="Пояснение3ExtendedTooltip" id="32"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="ВидыОграниченийПрав" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды ограничений прав</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды ограничений прав</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ВидыОграниченийПравExtendedTooltip" id="33"/>
+					<ChildItems>
+						<LabelDecoration name="Инструкция" id="25">
+							<Height>6</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формирование фрагмента кода, содержащего виды доступа используемые в ограничении каждого права каждого объекта метаданных.
+
+1. Открыть "Все ограничения доступа" через корень дерева объектов метаданных конфигуратора.
+2. "Вывести список" всех колонок в табличный документ, выделить все, скопировать в буфер обмена.
+3. В табличном документе, расположенном ниже выделить все и вставить из буфера обмена.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ИнструкцияКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ИнструкцияExtendedTooltip" id="34"/>
+						</LabelDecoration>
+						<SpreadSheetDocumentField name="ВсеОграниченияДоступа" id="10">
+							<DataPath>ВсеОграниченияДоступа</DataPath>
+							<Width>10</Width>
+							<Height>4</Height>
+							<ShowGrid>true</ShowGrid>
+							<ShowHeaders>true</ShowHeaders>
+							<VerticalScrollBar>true</VerticalScrollBar>
+							<HorizontalScrollBar>true</HorizontalScrollBar>
+							<Edit>true</Edit>
+							<ContextMenu name="ВсеОграниченияДоступаКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ВсеОграниченияДоступаExtendedTooltip" id="35"/>
+						</SpreadSheetDocumentField>
+						<UsualGroup name="Кнопки" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КнопкиExtendedTooltip" id="36"/>
+							<ChildItems>
+								<Button name="СформироватьОписаниеВидовДоступаПоПравам" id="22">
+									<Type>UsualButton</Type>
+									<Visible>false</Visible>
+									<CommandName>Form.Command.СформироватьОписаниеВидовДоступаПоПравам</CommandName>
+									<ExtendedTooltip name="СформироватьОписаниеВидовДоступаПоПравамExtendedTooltip" id="37"/>
+								</Button>
+								<Button name="СформироватьРазличияОписанийВидовДоступаПоПравам" id="27">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СформироватьРазличияОписанийВидовДоступаПоПравам</CommandName>
+									<ExtendedTooltip name="СформироватьРазличияОписанийВидовДоступаПоПравамExtendedTooltip" id="38"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Пояснение4" id="23">
+							<Height>6</Height>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сформировать фрагмент кода для получания видов доступа, используемых в ограничениях прав доступа в объектах метаданных. 
+
+Фрагмент кода используется для вставки в процедуру ПриЗаполненииВидовОграниченийПравОбъектовМетаданных общего модуля УправлениеДоступомПереопределяемый.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Пояснение4КонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="Пояснение4ExtendedTooltip" id="39"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИнструментыРазработчикаУправлениеДоступом</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВидыОграниченийПрав" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды ограничений прав объектов метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Таблица" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Право" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Право</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидДоступа" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид доступа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТаблицаОбъекта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПорядокКоллекции" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок коллекции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПорядокПрав" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок прав</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВсеОграниченияДоступа" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все ограничения доступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьОписаниеПрофилей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СформироватьОписаниеПрофилейВыполнить</Action>
+		</Command>
+		<Command name="СформироватьОписаниеВидовДоступаПоПравам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать полное описание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать полное описание для вставки в процедуру УправлениеДоступомПереопределяемый
+.ЗаполнитьВидыОграниченийПравОбъектовМетаданных()</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьОписание</Action>
+		</Command>
+		<Command name="СформироватьРазличияОписанийВидовДоступаПоПравам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать различия описаний</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать описание различий между новым описанием и
+существующим описанием в процедуре
+УправлениеДоступомПереопределяемый
+.ЗаполнитьВидыОграниченийПравОбъектовМетаданных()
+для частичного исправления существующего описания.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьОписаниеРазличий</Action>
+		</Command>
+	</Commands>
+</Form>

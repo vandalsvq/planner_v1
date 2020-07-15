@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Subsystem uuid="a48a7e88-ae65-4365-9c58-436f6eabafad">
+		<Properties>
+			<Name>ПланировщикДанные</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление данными планировщика</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КалендариПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СобытияПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЦветоваяГаммаПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПланировщикДанныеПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПланировщикДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПланировщикДанныеВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПланировщикДанныеКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПланировщикДанныеКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УчастникиСобытийПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УведомленияСобытийПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ГраницыСобытийПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НапоминанияСобытийПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыСобытийПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыУчастниковСобытийПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗаполнитьНапоминанияПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НеобязательныйУчастникСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОбязательныйУчастникСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НеуведомлятьУчастникаСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УведомлятьУчастникаСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НайтиНаКарте</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНастроекПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПланировщикКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УведомлениеУчастникуОтправлено</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

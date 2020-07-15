@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Отбор в календаре</v8:content>
+		</v8:item>
+	</Title>
+	<Group>Horizontal</Group>
+	<ChildItemsWidth>LeftNarrow</ChildItemsWidth>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОК" id="4">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОК</CommandName>
+				<ExtendedTooltip name="ФормаОКExtendedTooltip" id="6"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="5">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьExtendedTooltip" id="7"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="КомпоновщикНастройкиОтборДоступныеПоляОтбора" id="18">
+			<Representation>Tree</Representation>
+			<Autofill>true</Autofill>
+			<Width>60</Width>
+			<HeightInTableRows>15</HeightInTableRows>
+			<ChoiceMode>true</ChoiceMode>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Компоновщик.Settings.Filter.FilterAvailableFields</DataPath>
+			<ContextMenu name="КомпоновщикНастройкиОтборДоступныеПоляОтбораКонтекстноеМеню" id="19"/>
+			<AutoCommandBar name="КомпоновщикНастройкиОтборДоступныеПоляОтбораКоманднаяПанель" id="20"/>
+			<ExtendedTooltip name="КомпоновщикНастройкиОтборДоступныеПоляОтбораРасширеннаяПодсказка" id="21"/>
+			<SearchStringAddition name="КомпоновщикНастройкиОтборДоступныеПоляОтбораСтрокаПоиска" id="22">
+				<AdditionSource>
+					<Item>КомпоновщикНастройкиОтборДоступныеПоляОтбора</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастройкиОтборДоступныеПоляОтбораСтрокаПоискаКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="КомпоновщикНастройкиОтборДоступныеПоляОтбораСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КомпоновщикНастройкиОтборДоступныеПоляОтбораСостояниеПросмотра" id="27">
+				<AdditionSource>
+					<Item>КомпоновщикНастройкиОтборДоступныеПоляОтбора</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастройкиОтборДоступныеПоляОтбораСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="КомпоновщикНастройкиОтборДоступныеПоляОтбораСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КомпоновщикНастройкиОтборДоступныеПоляОтбораУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>КомпоновщикНастройкиОтборДоступныеПоляОтбора</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастройкиОтборДоступныеПоляОтбораУправлениеПоискомКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="КомпоновщикНастройкиОтборДоступныеПоляОтбораУправлениеПоискомРасширеннаяПодсказка" id="36"/>
+			</SearchControlAddition>
+		</Table>
+		<Table name="КомпоновщикНастройкиОтбор" id="1">
+			<Representation>Tree</Representation>
+			<Autofill>true</Autofill>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Компоновщик.Settings.Filter</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ViewMode>All</ViewMode>
+			<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+			<ContextMenu name="КомпоновщикНастройкиОтборКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="КомпоновщикНастройкиОтборКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="КомпоновщикНастройкиОтборExtendedTooltip" id="8"/>
+			<SearchStringAddition name="КомпоновщикНастройкиОтборСтрокаПоиска" id="9">
+				<AdditionSource>
+					<Item>КомпоновщикНастройкиОтбор</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастройкиОтборСтрокаПоискаКонтекстноеМеню" id="10"/>
+				<ExtendedTooltip name="КомпоновщикНастройкиОтборСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КомпоновщикНастройкиОтборСостояниеПросмотра" id="12">
+				<AdditionSource>
+					<Item>КомпоновщикНастройкиОтбор</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастройкиОтборСостояниеПросмотраКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="КомпоновщикНастройкиОтборСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КомпоновщикНастройкиОтборУправлениеПоиском" id="15">
+				<AdditionSource>
+					<Item>КомпоновщикНастройкиОтбор</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастройкиОтборУправлениеПоискомКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="КомпоновщикНастройкиОтборУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+			</SearchControlAddition>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Компоновщик" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компоновщик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОК</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Компоновщик">
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

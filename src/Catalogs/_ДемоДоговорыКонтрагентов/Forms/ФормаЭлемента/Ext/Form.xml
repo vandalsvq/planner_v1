@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="Форма_КоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаКодНаименование" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>30</Width>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодНаименованиеExtendedTooltip" id="49"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<SkipOnInput>true</SkipOnInput>
+					<Wrap>false</Wrap>
+					<ContextMenu name="Наименование_КонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="50"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<Enabled>false</Enabled>
+					<SkipOnInput>true</SkipOnInput>
+					<Width>14</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Wrap>false</Wrap>
+					<ContextMenu name="Код_КонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="51"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Контрагент" id="5">
+			<DataPath>Объект.Owner</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Width>30</Width>
+			<Wrap>false</Wrap>
+			<ContextMenu name="Контрагент_КонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="КонтрагентExtendedTooltip" id="43"/>
+		</InputField>
+		<InputField name="ГруппаДоговоров" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа договоров</v8:content>
+				</v8:item>
+			</Title>
+			<Width>30</Width>
+			<Wrap>false</Wrap>
+			<ContextMenu name="ГруппаДоговоров_КонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ГруппаДоговоровExtendedTooltip" id="44"/>
+		</InputField>
+		<UsualGroup name="ГруппаНомерДата" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаExtendedTooltip" id="45"/>
+			<ChildItems>
+				<InputField name="НомерДоговора" id="37">
+					<DataPath>Объект.НомерДоговора</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№ договора</v8:content>
+						</v8:item>
+					</Title>
+					<Width>1</Width>
+					<Wrap>false</Wrap>
+					<ContextMenu name="НомерДоговора_КонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="НомерДоговораExtendedTooltip" id="46"/>
+				</InputField>
+				<InputField name="ДатаДоговора" id="39">
+					<DataPath>Объект.ДатаДоговора</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>   от</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ДатаДоговора_КонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ДатаДоговораExtendedTooltip" id="47"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ВалютаРасчетов" id="11">
+			<DataPath>Объект.ВалютаРасчетов</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Left</TitleLocation>
+			<Wrap>false</Wrap>
+			<ContextMenu name="ВалютаРасчетов_КонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ВалютаРасчетовExtendedTooltip" id="48"/>
+		</InputField>
+		<UsualGroup name="Группа" id="42">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаExtendedTooltip" id="52"/>
+			<ChildItems>
+				<InputField name="ДатаНачалаДействия" id="21">
+					<DataPath>Объект.ДатаНачалаДействия</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Left</TitleLocation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ДатаНачалаДействия_КонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ДатаНачалаДействияExtendedTooltip" id="53"/>
+				</InputField>
+				<InputField name="ДатаОкончанияДействия" id="23">
+					<DataPath>Объект.ДатаОкончанияДействия</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата окончания</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Left</TitleLocation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ДатаОкончанияДействия_КонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДатаОкончанияДействияExtendedTooltip" id="54"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._ДемоДоговорыКонтрагентов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16476"></meta></head><body>
+<p style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Предназначена для контроля и замены правил конвертации данных. Правила конвертации данных используются при синхронизации данных двух программ. </p>
+<p style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Настройка <a href="CommonForm.ОбменыДанными/Help">синхронизации данных</a> по умолчанию производится в соответствии с так называемыми <strong>Типовыми правилами обмена</strong>. <a href="InformationRegister.ПравилаДляОбменаДанными/Help">Правила обмена</a> состоят из правил конвертации объектов и <a href="InformationRegister.ПравилаДляОбменаДанными.Form.ПравилаРегистрацииОбъектов/Help">правил регистрации объектов</a>. </p>
+<p style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Правила конвертации объектов</strong> можно открыть из настройки синхронизации данных по команде <strong>Все действия - Загрузить правила конвертации объектов</strong>.</p>
+<h3 style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Источник правил</h3>
+<p>Для стандартной синхронизации данных между типовыми конфигурациями используются <strong>Типовые правила из конфигурации </strong>(имя макета правил конвертации, из которого были получены типовые правила, указывается).<strong> </strong> Однако в ряде случаев необходимо использовать <strong>Правила из файла </strong>(например, если синхронизация ведется между базами с нетиповыми конфигурациями) или <strong>Режим отладки </strong>(например, если во время синхронизации данных произошла ошибка).</p>
+<p style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">С помощью переключателя <strong>Источник правил</strong> можно установить, откуда брать правила регистрации объектов:</p>
+<ul><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Типовые правила из конфигурации</strong> (выбраны по умолчанию).</div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Правила из файла</strong>. Использование правил, загруженных из файла, может привести к ошибкам при переходе на новую версию программы.</div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Режим отладки</strong>. Если выбран <strong>Режим отладки</strong>, то становятся доступными следующие настройки:</div>
+<ul><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Подключить внешнюю обработку для отладки выгрузки</strong> – указывается файл внешней обработки, содержащей отладочный модуль обработчиков выгрузки, сформированный в конфигурации "Конвертация данных". В клиент-серверном режиме работы указывается путь на сервере. </div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Подключить внешнюю обработку для отладки загрузки</strong> – указывается файл внешней обработки, содержащей отладочный модуль обработчиков загрузки, сформированный в конфигурации "Конвертация данных". В клиент-серверном режиме работы указывается путь на сервере. </div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Режим протоколирования синхронизации данных</strong> – если включено, то в процессе обмена данными возникающие события и ошибки будут записываться в указанный файл. Если файл не задан, то сообщения будут выводиться в <a href="DataProcessor.ЖурналРегистрации/Help">Журнал регистрации</a>. </div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Не останавливать выполнение обмена данными при возникновении ошибки</strong> – если установлено, то выполнение синхронизации данных не будет остановлено при возникновении какой-либо ошибки. Обмен данными завершится до конца с выводом отладочных сообщений в файл протокола обмена или журнал регистрации.</div></li></ul></li></ul><p style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Ниже выводится наименование правил, которые в данный момент используются.</p>
+<h3 style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Информация о правилах</h3>
+<p style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Для контроля выводится информация о правилах:</p>
+<ul><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Предупреждение о возможности возникновения ошибок при использовании правил из внешнего файла;</div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Правила конвертации этой программы от</strong> - указывается дата и время создания правил;</div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Конфигурация источник</strong> - указывается версия правил конвертации объектов;</div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Конфигурация приемник</strong> - указывается версия правил конвертации объектов;</div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Правила конвертации корреспондента от</strong> - указывается дата и время создания правил;</div>
+</li><li><strong>Конфигурация источник</strong> - указывается версия правил конвертации объектов; 
+</li><li><strong>Конфигурация приемник</strong> - указывается версия правил конвертации объектов. </li></ul><h3>Дополнительно</h3>
+<ul><li>Включите флажок <strong>Использовать фильтр выборочной регистрации объектов</strong>.</li></ul><h3 style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Загрузка правил</h3>
+<ul><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Установите переключатель <strong>Источник правил</strong> в нужное положение.</div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Нажмите <strong>Загрузить правила</strong>.</div></div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">При необходимости укажите путь к файлу с правилами.</div></div></li></ul><h3 style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Выгрузка правил</h3>
+<p style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" class="MsoNormal">При необходимости правила регистрации можно выгрузить в файл. </p>
+<ul><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Для этого нажмите <strong>Выгрузить правила</strong>. </div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Выберите способ выгрузки:</div>
+<ul><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>Обычным файлом</strong>;</div>
+</li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><strong>В архиве .zip</strong>.</div></li></ul></li><li>
+<div style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Выберите путь к файлу на компьютере или на сетевом диске, наименование проставляется программой по умолчанию. Нажмите <strong>Сохранить</strong>.</div></li></ul><h3>Замена типовых правил конвертации объектов правилами из внешнего файла</h3>
+<ul><li>Установить значение переключателя <strong>Источник правил</strong> в положение <strong>Правила из файла</strong> или <strong>Режим отладки</strong> и по кнопке <strong>Загрузить правила </strong>выбрать файл правил на компьютере или в сетевой папке. 
+</li><li>Обратить внимание, что загружены корректные правила, подходящие для используемых версий программы-источника и программы-приемника.  Для этого выводится <strong>Информация о правилах</strong>, где указано, от какой даты эти правила. <o:p></o:p> 
+</li><li>Нажать на кнопку <strong>Записать и закрыть</strong>. Загруженные правила будут применены немедленно.</li></ul><p><strong>Примечание:</strong> правила конвертации объектов и правила регистрации объектов используются для всех однотипных синхронизаций данных (которые основываются на одном плане обмена; например: на базе плана обмена <strong>Полный</strong> настроено две синхронизации данных <strong>"Синхронизация с филиалом в Краснодаре"</strong> и <strong>"Синхронизация с представительством в Киеве"</strong>). Поэтому если в программе настроено несколько однотипных синхронизаций, то замену правил достаточно выполнить однократно (выбрав любую из настроенных синхронизаций данных).</p></body></html>

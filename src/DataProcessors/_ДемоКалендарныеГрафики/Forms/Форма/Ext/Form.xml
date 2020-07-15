@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Календарь" id="1">
+			<DataPath>Календарь</DataPath>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Wrap>false</Wrap>
+			<ContextMenu name="КалендарьКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КалендарьExtendedTooltip" id="59"/>
+		</InputField>
+		<UsualGroup name="Группа" id="43">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаExtendedTooltip" id="60"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРасчетДатыОкончания" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчет даты окончания</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расчет даты окончания</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ExtendedTooltip name="ГруппаРасчетДатыОкончанияExtendedTooltip" id="61"/>
+					<ChildItems>
+						<InputField name="Дата" id="3">
+							<DataPath>Дата</DataPath>
+							<Wrap>false</Wrap>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ДатаExtendedTooltip" id="62"/>
+						</InputField>
+						<UsualGroup name="ГруппаРассчитатьОднуДату" id="11">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Одна дата</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа рассчитать одну дату</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаРассчитатьОднуДатуExtendedTooltip" id="63"/>
+							<ChildItems>
+								<InputField name="КоличествоДней" id="5">
+									<DataPath>КоличествоДней</DataPath>
+									<Wrap>false</Wrap>
+									<ContextMenu name="КоличествоДнейКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="КоличествоДнейExtendedTooltip" id="64"/>
+								</InputField>
+								<Button name="РассчитатьДату" id="10">
+									<Type>UsualButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.РассчитатьДату</CommandName>
+									<ExtendedTooltip name="РассчитатьДатуExtendedTooltip" id="65"/>
+								</Button>
+								<LabelField name="ДатаПоКалендарю" id="8">
+									<DataPath>ДатаПоКалендарю</DataPath>
+									<ContextMenu name="ДатаПоКалендарюКонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="ДатаПоКалендарюExtendedTooltip" id="66"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРассчитатьМассивДат" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Массив дат</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа рассчитать массив дат</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаРассчитатьМассивДатExtendedTooltip" id="67"/>
+							<ChildItems>
+								<CheckBoxField name="РассчитыватьСледующуюДатуОтПредыдущей" id="33">
+									<DataPath>РассчитыватьСледующуюДатуОтПредыдущей</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РассчитыватьСледующуюДатуОтПредыдущейКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="РассчитыватьСледующуюДатуОтПредыдущейExtendedTooltip" id="68"/>
+								</CheckBoxField>
+								<Table name="СписокДней" id="15">
+									<Representation>List</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<SkipOnInput>false</SkipOnInput>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Header>false</Header>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ТаблицаДатПоКалендарю</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СписокДнейКонтекстноеМеню" id="16"/>
+									<AutoCommandBar name="СписокДнейКоманднаяПанель" id="17"/>
+									<ExtendedTooltip name="СписокДнейExtendedTooltip" id="69"/>
+									<SearchStringAddition name="СписокДнейСтрокаПоиска" id="87">
+										<AdditionSource>
+											<Item>СписокДней</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДнейСтрокаПоискаКонтекстноеМеню" id="88"/>
+										<ExtendedTooltip name="СписокДнейСтрокаПоискаРасширеннаяПодсказка" id="89"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокДнейСостояниеПросмотра" id="90">
+										<AdditionSource>
+											<Item>СписокДней</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДнейСостояниеПросмотраКонтекстноеМеню" id="91"/>
+										<ExtendedTooltip name="СписокДнейСостояниеПросмотраРасширеннаяПодсказка" id="92"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокДнейУправлениеПоиском" id="93">
+										<AdditionSource>
+											<Item>СписокДней</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДнейУправлениеПоискомКонтекстноеМеню" id="94"/>
+										<ExtendedTooltip name="СписокДнейУправлениеПоискомРасширеннаяПодсказка" id="95"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="СписокДнейЗначение" id="18">
+											<EditMode>EnterOnInput</EditMode>
+											<Wrap>false</Wrap>
+											<ContextMenu name="СписокДнейЗначениеКонтекстноеМеню" id="19"/>
+											<ExtendedTooltip name="СписокДнейЗначениеExtendedTooltip" id="70"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Button name="РассчитатьМассивДат" id="25">
+									<Type>UsualButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.РассчитатьМассивДат</CommandName>
+									<ExtendedTooltip name="РассчитатьМассивДатExtendedTooltip" id="71"/>
+								</Button>
+								<Table name="ТаблицаДатПоКалендарю" id="26">
+									<Representation>List</Representation>
+									<SkipOnInput>false</SkipOnInput>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ТаблицаДатПоКалендарю</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ТаблицаДатПоКалендарюКонтекстноеМеню" id="27"/>
+									<AutoCommandBar name="ТаблицаДатПоКалендарюКоманднаяПанель" id="28"/>
+									<ExtendedTooltip name="ТаблицаДатПоКалендарюExtendedTooltip" id="72"/>
+									<SearchStringAddition name="ТаблицаДатПоКалендарюСтрокаПоиска" id="96">
+										<AdditionSource>
+											<Item>ТаблицаДатПоКалендарю</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаДатПоКалендарюСтрокаПоискаКонтекстноеМеню" id="97"/>
+										<ExtendedTooltip name="ТаблицаДатПоКалендарюСтрокаПоискаРасширеннаяПодсказка" id="98"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТаблицаДатПоКалендарюСостояниеПросмотра" id="99">
+										<AdditionSource>
+											<Item>ТаблицаДатПоКалендарю</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаДатПоКалендарюСостояниеПросмотраКонтекстноеМеню" id="100"/>
+										<ExtendedTooltip name="ТаблицаДатПоКалендарюСостояниеПросмотраРасширеннаяПодсказка" id="101"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТаблицаДатПоКалендарюУправлениеПоиском" id="102">
+										<AdditionSource>
+											<Item>ТаблицаДатПоКалендарю</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаДатПоКалендарюУправлениеПоискомКонтекстноеМеню" id="103"/>
+										<ExtendedTooltip name="ТаблицаДатПоКалендарюУправлениеПоискомРасширеннаяПодсказка" id="104"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ТаблицаДатПоКалендарюКоличествоДней" id="29">
+											<DataPath>ТаблицаДатПоКалендарю.КоличествоДней</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>13</Width>
+											<Wrap>false</Wrap>
+											<ContextMenu name="ТаблицаДатПоКалендарюКоличествоДнейКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="ТаблицаДатПоКалендарюКоличествоДнейExtendedTooltip" id="73"/>
+										</InputField>
+										<InputField name="ТаблицаДатПоКалендарюДатаПоКалендарю" id="31">
+											<DataPath>ТаблицаДатПоКалендарю.ДатаПоКалендарю</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Wrap>false</Wrap>
+											<ContextMenu name="ТаблицаДатПоКалендарюДатаПоКалендарюКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="ТаблицаДатПоКалендарюДатаПоКалендарюExtendedTooltip" id="74"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПраваяПанель" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа правая панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа правая панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПраваяПанельExtendedTooltip" id="75"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРасчетКоличестваДней" id="35">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расчет количества дней</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа расчет количества дней</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаРасчетКоличестваДнейExtendedTooltip" id="76"/>
+							<ChildItems>
+								<InputField name="ДатаНачала" id="37">
+									<DataPath>ДатаНачала</DataPath>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ДатаНачалаExtendedTooltip" id="77"/>
+								</InputField>
+								<InputField name="ДатаОкончания" id="39">
+									<DataPath>ДатаОкончания</DataPath>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ДатаОкончанияExtendedTooltip" id="78"/>
+								</InputField>
+								<InputField name="РазностьДат" id="44">
+									<DataPath>РазностьДат</DataPath>
+									<Wrap>false</Wrap>
+									<ContextMenu name="РазностьДатКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="РазностьДатExtendedTooltip" id="79"/>
+								</InputField>
+								<Button name="РассчитатьКоличествоДней" id="46">
+									<Type>UsualButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.РассчитатьКоличествоДней</CommandName>
+									<ExtendedTooltip name="РассчитатьКоличествоДнейExtendedTooltip" id="80"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДатыРабочихДней" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Даты рабочих дней</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Даты рабочих дней</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаДатыРабочихДнейExtendedTooltip" id="81"/>
+							<ChildItems>
+								<CheckBoxField name="ПолучатьПредшествующие" id="56">
+									<DataPath>ПолучатьПредшествующие</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПолучатьПредшествующиеКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="ПолучатьПредшествующиеExtendedTooltip" id="82"/>
+								</CheckBoxField>
+								<Button name="ПолучитьДатыРабочихДней" id="48">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПолучитьДатыРабочихДней</CommandName>
+									<ExtendedTooltip name="ПолучитьДатыРабочихДнейExtendedTooltip" id="83"/>
+								</Button>
+								<Table name="ДатыРабочихДней" id="49">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ДатыРабочихДней</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ДатыРабочихДнейКонтекстноеМеню" id="50"/>
+									<AutoCommandBar name="ДатыРабочихДнейКоманднаяПанель" id="51"/>
+									<ExtendedTooltip name="ДатыРабочихДнейExtendedTooltip" id="84"/>
+									<SearchStringAddition name="ДатыРабочихДнейСтрокаПоиска" id="105">
+										<AdditionSource>
+											<Item>ДатыРабочихДней</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДатыРабочихДнейСтрокаПоискаКонтекстноеМеню" id="106"/>
+										<ExtendedTooltip name="ДатыРабочихДнейСтрокаПоискаРасширеннаяПодсказка" id="107"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ДатыРабочихДнейСостояниеПросмотра" id="108">
+										<AdditionSource>
+											<Item>ДатыРабочихДней</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДатыРабочихДнейСостояниеПросмотраКонтекстноеМеню" id="109"/>
+										<ExtendedTooltip name="ДатыРабочихДнейСостояниеПросмотраРасширеннаяПодсказка" id="110"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ДатыРабочихДнейУправлениеПоиском" id="111">
+										<AdditionSource>
+											<Item>ДатыРабочихДней</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ДатыРабочихДнейУправлениеПоискомКонтекстноеМеню" id="112"/>
+										<ExtendedTooltip name="ДатыРабочихДнейУправлениеПоискомРасширеннаяПодсказка" id="113"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ДатыРабочихДнейДата" id="52">
+											<DataPath>ДатыРабочихДней.Дата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДатыРабочихДнейДатаКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="ДатыРабочихДнейДатаExtendedTooltip" id="85"/>
+										</InputField>
+										<InputField name="ДатыРабочихДнейРабочаяДата" id="54">
+											<DataPath>ДатыРабочихДней.РабочаяДата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДатыРабочихДнейРабочаяДатаКонтекстноеМеню" id="55"/>
+											<ExtendedTooltip name="ДатыРабочихДнейРабочаяДатаExtendedTooltip" id="86"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject._ДемоКалендарныеГрафики</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Календарь" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>График работы или производственный календарь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПроизводственныеКалендари</v8:Type>
+				<v8:Type>cfg:CatalogRef.Календари</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Дата" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоДней" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество дней</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаПоКалендарю" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата по календарю</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаДатПоКалендарю" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица дат по календарю</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="КоличествоДней" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество дней</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПоКалендарю" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата по календарю</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="РассчитыватьСледующуюДатуОтПредыдущей" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитывать следующую дату от предыдущей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаНачала" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаОкончания" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата окончания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РазностьДат" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разность дат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатыРабочихДней" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Даты рабочих дней</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Дата" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="РабочаяДата" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ближайшая рабочая дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПолучатьПредшествующие" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получать предшествующие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РассчитатьДату" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать дату по календарю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать дату</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Рассчитать</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>РассчитатьДату</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="РассчитатьМассивДат" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать массив дат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать массив дат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Рассчитать</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>РассчитатьМассивДат</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="РассчитатьКоличествоДней" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать количество дней</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать количество дней</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Рассчитать</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>РассчитатьКоличествоДней</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПолучитьДатыРабочихДней" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить даты рабочих дней</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить даты рабочих дней</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДатыРабочихДней</Action>
+		</Command>
+	</Commands>
+</Form>

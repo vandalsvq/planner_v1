@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНаименованиеВид" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование вид</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование вид</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованиеВидРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<LabelDecoration name="ЦветПредставление" id="49">
+					<Width>9</Width>
+					<Height>1</Height>
+					<TextColor>style:FormBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цвет текста</v8:content>
+						</v8:item>
+					</Title>
+					<BackColor>style:SpecialTextColor</BackColor>
+					<ContextMenu name="ЦветПредставлениеКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ЦветПредставлениеРасширеннаяПодсказка" id="51"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИспользованиеНеОтображатьНаФорме" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использование не отображать на форме</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использование не отображать на форме</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИспользованиеНеОтображатьНаФормеРасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<InputField name="Использование" id="56">
+					<DataPath>Объект.Использование</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование</v8:content>
+						</v8:item>
+					</Title>
+					<Width>15</Width>
+					<ListChoiceMode>true</ListChoiceMode>
+					<TextEdit>false</TextEdit>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Для календарей</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">0</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Для событий</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ИспользованиеКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ИспользованиеРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<CheckBoxField name="НеОтображатьНаФорме" id="61">
+					<DataPath>Объект.НеОтображатьНаФорме</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>не выводить на форме элемента справочника</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НеОтображатьНаФормеКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="НеОтображатьНаФормеРасширеннаяПодсказка" id="63"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаГоризонтальная" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонтальная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонтальная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЦветФона" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цвет фона</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа цвет фона</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаЦветФонаРасширеннаяПодсказка" id="19"/>
+					<ChildItems>
+						<InputField name="ЦветФонаHex" id="13">
+							<DataPath>Объект.ЦветФонаHex</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>HEX</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ЦветФонаHexКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ЦветФонаHexРасширеннаяПодсказка" id="20"/>
+							<Events>
+								<Event name="StartChoice">ЦветФонаHexНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаЦветФонаRGB" id="26">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа цвет фона RGB</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа цвет фона RGB</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЦветФонаRGBРасширеннаяПодсказка" id="27"/>
+							<ChildItems>
+								<InputField name="ЦветФонаКрасный" id="5">
+									<DataPath>Объект.ЦветФонаКрасный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>RGB</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЦветФонаКрасныйКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="ЦветФонаКрасныйРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="ЦветФонаЗеленый" id="7">
+									<DataPath>Объект.ЦветФонаЗеленый</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЦветФонаЗеленыйКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ЦветФонаЗеленыйРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="ЦветФонаСиний" id="9">
+									<DataPath>Объект.ЦветФонаСиний</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЦветФонаСинийКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="ЦветФонаСинийРасширеннаяПодсказка" id="23"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЦветТекста" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цвет текста</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа цвет фона</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаЦветТекстаРасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<InputField name="ЦветТекстаHex" id="30">
+							<DataPath>Объект.ЦветТекстаHex</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Цвет</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextEdit>false</TextEdit>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Черный</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">#1d1d1d</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Белый</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">#ffffff</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ЦветТекстаHexКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ЦветТекстаHexРасширеннаяПодсказка" id="32"/>
+							<Events>
+								<Event name="OnChange">ЦветТекстаHexПриИзменении</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаЦветТекстаRGB" id="33">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа цвет текста RGB</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа цвет фона RGB</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЦветТекстаRGBРасширеннаяПодсказка" id="34"/>
+							<ChildItems>
+								<InputField name="ЦветТекстаКрасный" id="35">
+									<DataPath>Объект.ЦветТекстаКрасный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>RGB</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЦветТекстаКрасныйКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ЦветТекстаКрасныйРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<InputField name="ЦветТекстаЗеленый" id="38">
+									<DataPath>Объект.ЦветТекстаЗеленый</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЦветТекстаЗеленыйКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ЦветТекстаЗеленыйРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="ЦветТекстаСиний" id="41">
+									<DataPath>Объект.ЦветТекстаСиний</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЦветТекстаСинийКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ЦветТекстаСинийРасширеннаяПодсказка" id="43"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ЦветоваяГаммаПланировщика</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

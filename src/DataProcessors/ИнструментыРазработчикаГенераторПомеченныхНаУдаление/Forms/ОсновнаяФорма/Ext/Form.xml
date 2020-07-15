@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПуск" id="4">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Пуск</CommandName>
+				<ExtendedTooltip name="ФормаПускExtendedTooltip" id="5"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="43">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка создает элементы справочника _Демо: Номенклатура.
+Это необходимо для проверки различных сценариев работы механизма удаления помеченных:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="45"/>
+		</LabelDecoration>
+		<UsualGroup name="ЦепочкаПомеченныхНаУдаление" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейная зависимость помеченных на удаление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цепочка помеченных на удаление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ЦепочкаПомеченныхНаУдалениеРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация2" id="46">
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="48"/>
+				</LabelDecoration>
+				<CheckBoxField name="ЛинейнаяЗависимостьИспользование" id="21">
+					<DataPath>ЛинейнаяЗависимостьИспользование</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЛинейнаяЗависимостьИспользованиеКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ЛинейнаяЗависимостьИспользованиеРасширеннаяПодсказка" id="23"/>
+				</CheckBoxField>
+				<InputField name="ДлинаЛинейнойСвязи" id="1">
+					<DataPath>ЛинейнаяЗависимостьДлина</DataPath>
+					<Width>8</Width>
+					<ContextMenu name="ДлинаЛинейнойСвязиКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ДлинаЛинейнойСвязиРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ПрефиксЛинейнойСвязи" id="12">
+					<DataPath>ЛинейнаяЗависимостьПрефикс</DataPath>
+					<ContextMenu name="ПрефиксЛинейнойСвязиКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ПрефиксЛинейнойСвязиРасширеннаяПодсказка" id="14"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="РешаемоеКольцоПомеченныхНаУдаление" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кольцевая зависимость - все помечены на удаление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цепочка помеченных на удаление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="РешаемоеКольцоПомеченныхНаУдалениеРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация3" id="49">
+					<ContextMenu name="Декорация3КонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="51"/>
+				</LabelDecoration>
+				<CheckBoxField name="РешаемаяКольцеваяЗависимостьИспользование" id="26">
+					<DataPath>РешаемаяКольцеваяЗависимостьИспользование</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РешаемаяКольцеваяЗависимостьИспользованиеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="РешаемаяКольцеваяЗависимостьИспользованиеРасширеннаяПодсказка" id="28"/>
+				</CheckBoxField>
+				<InputField name="РешаемаяКольцеваяЗависимостьДлина" id="6">
+					<DataPath>РешаемаяКольцеваяЗависимостьДлина</DataPath>
+					<Width>8</Width>
+					<ContextMenu name="РешаемаяКольцеваяЗависимостьДлинаКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="РешаемаяКольцеваяЗависимостьДлинаРасширеннаяПодсказка" id="8"/>
+				</InputField>
+				<InputField name="РешаемаяКольцеваяЗависимостьПрефикс" id="9">
+					<DataPath>РешаемаяКольцеваяЗависимостьПрефикс</DataPath>
+					<ContextMenu name="РешаемаяКольцеваяЗависимостьПрефиксКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="РешаемаяКольцеваяЗависимостьПрефиксРасширеннаяПодсказка" id="11"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="НеРешаемоеКольцоПомеченныхНаУдаление" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кольцевая зависимость - один из объектов не помечен на удаление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цепочка помеченных на удаление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="НеРешаемоеКольцоПомеченныхНаУдалениеРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация4" id="52">
+					<ContextMenu name="Декорация4КонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="54"/>
+				</LabelDecoration>
+				<CheckBoxField name="НеРешаемаяКольцеваяЗависимостьРазрешаемаяИспользование" id="31">
+					<DataPath>НеРешаемаяКольцеваяЗависимостьИспользование</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НеРешаемаяКольцеваяЗависимостьРазрешаемаяИспользованиеКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="НеРешаемаяКольцеваяЗависимостьРазрешаемаяИспользованиеРасширеннаяПодсказка" id="33"/>
+				</CheckBoxField>
+				<InputField name="НеРешаемаяКольцеваяЗависимостьДлина" id="34">
+					<DataPath>НеРешаемаяКольцеваяЗависимостьДлина</DataPath>
+					<Width>8</Width>
+					<ContextMenu name="НеРешаемаяКольцеваяЗависимостьДлинаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="НеРешаемаяКольцеваяЗависимостьДлинаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="НеРешаемаяКольцеваяЗависимостьРазрешаемаяПрефикс" id="37">
+					<DataPath>НеРешаемаяКольцеваяЗависимостьПрефикс</DataPath>
+					<ContextMenu name="НеРешаемаяКольцеваяЗависимостьРазрешаемаяПрефиксКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="НеРешаемаяКольцеваяЗависимостьРазрешаемаяПрефиксРасширеннаяПодсказка" id="39"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ДругиеСценарии" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Другие сценарии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Другие сценарии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ДругиеСценарииРасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация5" id="57">
+					<ContextMenu name="Декорация5КонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="59"/>
+				</LabelDecoration>
+				<UsualGroup name="Группа1" id="74">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="76">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="77"/>
+							<ChildItems>
+								<CheckBoxField name="ПомеченныйНаУдалениеВыбранВКонстанте" id="69">
+									<DataPath>ПомеченныйНаУдалениеВыбранВКонстантеИспользование</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПомеченныйНаУдалениеВыбранВКонстантеКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ПомеченныйНаУдалениеВыбранВКонстантеРасширеннаяПодсказка" id="71"/>
+								</CheckBoxField>
+								<InputField name="ПомеченныйНаУдалениеВыбранВКонстантеПрефикс" id="78">
+									<DataPath>ПомеченныйНаУдалениеВыбранВКонстантеПрефикс</DataPath>
+									<ContextMenu name="ПомеченныйНаУдалениеВыбранВКонстантеПрефиксКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ПомеченныйНаУдалениеВыбранВКонстантеПрефиксРасширеннаяПодсказка" id="80"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИнструментыРазработчикаГенераторПомеченныхНаУдаление</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ЛинейнаяЗависимостьДлина" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РешаемаяКольцеваяЗависимостьДлина" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РешаемаяКольцеваяЗависимостьПрефикс" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префикс наименования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛинейнаяЗависимостьПрефикс" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префикс наименования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛинейнаяЗависимостьИспользование" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РешаемаяКольцеваяЗависимостьИспользование" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеРешаемаяКольцеваяЗависимостьДлина" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НеРешаемаяКольцеваяЗависимостьИспользование" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеРешаемаяКольцеваяЗависимостьПрефикс" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префикс наименования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПомеченныйНаУдалениеВыбранВКонстантеИспользование" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помеченный на удаление выбран в константе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПомеченныйНаУдалениеВыбранВКонстантеПрефикс" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Пуск" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать объекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пуск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Пуск</Action>
+		</Command>
+	</Commands>
+</Form>

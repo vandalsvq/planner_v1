@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Width>75</Width>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="Перенести" id="1">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Перенести</CommandName>
+				<ExtendedTooltip name="ПеренестиРасширеннаяПодсказка" id="46"/>
+			</Button>
+			<Button name="Закрыть" id="2">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="47"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="НадписьОписание" id="73">
+			<Width>77</Width>
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенос данных реализован средствами обработки "УниверсальныйОбменДаннымиXML"</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НадписьОписаниеКонтекстноеМеню" id="74"/>
+			<ExtendedTooltip name="НадписьОписаниеРасширеннаяПодсказка" id="75"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаНастройкиПодключения" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Другая программа расположена</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаНастройкиПодключенияExtendedTooltip" id="48">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Для настройки переноса данных необходимо знать где находится программа, в которую необходимо выполнить перенос пользователей. Для этого достаточно открыть программу. В главном меню выбрать пункт "Справка\О программе...". 
+Обратите внимание на следующие параметры (все они могут быть скопированы из формы "О программе..."): 
+• Режим - либо файловый либо серверный. Если режим файловый, то информационная база находится в каталоге на данном компьютере или в локальной сети. Если режим серверный, то для подключения нужно знать имя сервера и имя информационной базы на сервере. 
+• Каталог - для файлового режима указывается каталог, в котором располагается информационная база. 
+• Сервер - для серверного режима указывается имя сервера 1С:Предприятия, на котором расположена информационная база. 
+• База - для серверного режима указывается имя информационной базы на сервере 1С:Предприятия. 
+• Пользователь - имя пользователя, который вошел в информационную базу. Если в имени пользователя присутствует ";", то в качестве имени пользователя для подключения нужно использовать имя от начала строки до ";".</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+			<ChildItems>
+				<UsualGroup name="ГруппаВыбораТипаБазы" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная база расположена</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыбораТипаБазыExtendedTooltip" id="49"/>
+					<ChildItems>
+						<RadioButtonField name="ТипБазы" id="92">
+							<DataPath>ТипБазы</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ItemHeight>1</ItemHeight>
+							<ColumnsCount>1</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>На этом компьютере (на компьютере в локальной сети):</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>На сервере 1С:Предприятия:</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ТипБазыКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="ТипБазыРасширеннаяПодсказка" id="94"/>
+						</RadioButtonField>
+						<UsualGroup name="ГруппаПараметры" id="88">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="89"/>
+							<ChildItems>
+								<InputField name="КаталогФайловойБазы" id="7">
+									<DataPath>КаталогФайловойБазы</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="КаталогФайловойБазыКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="КаталогФайловойБазыРасширеннаяПодсказка" id="54"/>
+									<Events>
+										<Event name="StartChoice">КаталогФайловойБазыНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаПараметрыСервера" id="90">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметры сервера</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметры сервера</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПараметрыСервераРасширеннаяПодсказка" id="91"/>
+									<ChildItems>
+										<InputField name="СерверБазы" id="10">
+											<DataPath>СерверБазы</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="СерверБазыКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="СерверБазыРасширеннаяПодсказка" id="56"/>
+											<Events>
+												<Event name="OnChange">СерверБазыПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ИмяБазы" id="12">
+											<DataPath>ИмяБазы</DataPath>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ИмяБазыКонтекстноеМеню" id="13"/>
+											<ExtendedTooltip name="ИмяБазыРасширеннаяПодсказка" id="57"/>
+											<Events>
+												<Event name="OnChange">ИмяБазыПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТипБазы" id="101">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип базы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип базы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТипБазыРасширеннаяПодсказка" id="102"/>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАутентификации" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа аутентификации</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАутентификацииExtendedTooltip" id="59"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАутентификацииОС" id="95">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа аутентификации ОС</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа аутентификации ОС</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАутентификацииОСРасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<CheckBoxField name="АутентификацияОС" id="20">
+									<DataPath>АутентификацияОС</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="АутентификацияОСКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="АутентификацияОСРасширеннаяПодсказка" id="66"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАутентификации1С" id="97">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа аутентификации1 С</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа аутентификации1 С</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАутентификации1СРасширеннаяПодсказка" id="98"/>
+							<ChildItems>
+								<InputField name="Пользователь" id="15">
+									<DataPath>Пользователь</DataPath>
+									<Width>13</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПользовательКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="ПользовательExtendedTooltip" id="60">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Должен быть указан пользователь с административными правами.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</InputField>
+								<UsualGroup name="ГруппаПароль1С" id="99">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пароль1 С</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пароль1 С</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПароль1СРасширеннаяПодсказка" id="100"/>
+									<ChildItems>
+										<InputField name="Пароль" id="17">
+											<DataPath>Пароль</DataPath>
+											<Width>13</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<PasswordMode>true</PasswordMode>
+											<ContextMenu name="ПарольКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ПарольExtendedTooltip" id="61"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="Декорация1" id="103">
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="105"/>
+								</LabelDecoration>
+								<Button name="ПроверитьПодключение" id="22">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ПроверитьПодключение</CommandName>
+									<ExtendedTooltip name="ПроверитьПодключениеExtendedTooltip" id="62"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаНастройкиПереноса" id="106">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки переноса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки переноса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаНастройкиПереносаРасширеннаяПодсказка" id="107"/>
+			<ChildItems>
+				<Page name="СтраницаГруппПользователей" id="108">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Переносить пользователей групп</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница групп пользователей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаГруппПользователейРасширеннаяПодсказка" id="109"/>
+					<ChildItems>
+						<Table name="ПользователиГрупп" id="35">
+							<Representation>Tree</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Height>4</Height>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ПользователиГрупп</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="ПользователиГруппКонтекстноеМеню" id="36"/>
+							<AutoCommandBar name="ПользователиГруппКоманднаяПанель" id="37">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ПользователиГруппУстановитьФлажки" id="120">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьФлажки</CommandName>
+										<ExtendedTooltip name="ПользователиГруппУстановитьФлажкиРасширеннаяПодсказка" id="121"/>
+									</Button>
+									<Button name="ПользователиГруппСнятьФлажки" id="122">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьФлажки</CommandName>
+										<ExtendedTooltip name="ПользователиГруппСнятьФлажкиРасширеннаяПодсказка" id="123"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПользователиГруппРасширеннаяПодсказка" id="69"/>
+							<SearchStringAddition name="ПользователиГруппСтрокаПоиска" id="127">
+								<AdditionSource>
+									<Item>ПользователиГрупп</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиГруппСтрокаПоискаКонтекстноеМеню" id="128"/>
+								<ExtendedTooltip name="ПользователиГруппСтрокаПоискаРасширеннаяПодсказка" id="129"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПользователиГруппСостояниеПросмотра" id="130">
+								<AdditionSource>
+									<Item>ПользователиГрупп</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиГруппСостояниеПросмотраКонтекстноеМеню" id="131"/>
+								<ExtendedTooltip name="ПользователиГруппСостояниеПросмотраРасширеннаяПодсказка" id="132"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПользователиГруппУправлениеПоиском" id="133">
+								<AdditionSource>
+									<Item>ПользователиГрупп</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиГруппУправлениеПоискомКонтекстноеМеню" id="134"/>
+								<ExtendedTooltip name="ПользователиГруппУправлениеПоискомРасширеннаяПодсказка" id="135"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ПользователиГруппВыбор</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="ГруппаКолонокПометкаПользователь" id="112">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа колонок пометка пользователь</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа колонок пометка пользователь</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ГруппаКолонокПометкаПользовательРасширеннаяПодсказка" id="113"/>
+									<ChildItems>
+										<CheckBoxField name="ПользователиПометка" id="114">
+											<DataPath>ПользователиГрупп.Пометка</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ThreeState>true</ThreeState>
+											<ContextMenu name="ПользователиПометкаКонтекстноеМеню" id="115"/>
+											<ExtendedTooltip name="ПользователиПометкаРасширеннаяПодсказка" id="116"/>
+											<Events>
+												<Event name="OnChange">ПользователиПометкаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<PictureField name="ПользователиГруппПиктограмма" id="124">
+											<DataPath>ПользователиГрупп.ИндексПиктограммы</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ValuesPicture>
+												<xr:Abs>ValuesPicture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ValuesPicture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ПользователиГруппПиктограммаКонтекстноеМеню" id="125"/>
+											<ExtendedTooltip name="ПользователиГруппПиктограммаРасширеннаяПодсказка" id="126"/>
+										</PictureField>
+										<InputField name="ПользователиПредставление" id="117">
+											<DataPath>ПользователиГрупп.Представление</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПользователиПредставлениеКонтекстноеМеню" id="118"/>
+											<ExtendedTooltip name="ПользователиПредставлениеРасширеннаяПодсказка" id="119"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаКомментарий" id="110">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавляемый комментарий к переносимым сведениям</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница комментарий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаКомментарийРасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<InputField name="Комментарий" id="79">
+							<DataPath>Комментарий</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Height>2</Height>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="81"/>
+							<Events>
+								<Event name="OnChange">КомментарийПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject._ДемоПереносСведенийОПользователяхВДругуюПрограмму</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПользователиГрупп" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ПользователиГрупп.ИндексПиктограммы</Field>
+				<Field>ПользователиГрупп.Представление</Field>
+			</UseAlways>
+			<Columns>
+				<Column name="Пометка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГруппаПользователей" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пользователей</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ГруппыПользователей</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Пользователь" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИндексПиктограммы" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс пиктограммы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТипБазы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационная база расположена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ТипБазы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КаталогФайловойБазы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>КаталогФайловойБазы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СерверБазы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>СерверБазы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмяБазы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационная база</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмяБазы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Пользователь" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>Пользователь</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Пароль" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АутентификацияОС" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация ОС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>АутентификацияОС</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Комментарий" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыОбработчикаОжидания" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры обработчика ожидания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Перенести" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести сведения о пользователях в другую программу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Перенести</Action>
+		</Command>
+		<Command name="ПроверитьПодключение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение к базу-приемнику</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьПодключение</Action>
+		</Command>
+		<Command name="УстановитьФлажки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать всех пользователей во всех группах</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать всех пользователей во всех группах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьФлажки</Action>
+		</Command>
+		<Command name="СнятьФлажки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять признак переноса у всех пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять признак переноса у всех пользователей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьФлажки</Action>
+		</Command>
+	</Commands>
+</Form>

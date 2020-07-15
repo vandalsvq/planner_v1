@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Subsystem uuid="e6c265c7-1127-462a-81a7-0fd819bb2a1b">
+		<Properties>
+			<Name>_ДемоСинхронизацияДанных</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизация данных</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизация данных с другими программами и организация совместной работы в распределенной информационной базе (РИБ)</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture>
+				<xr:Ref>CommonPicture._ДемоРазделСинхронизацияДанных</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan._ДемоОбменСБиблиотекойСтандартныхПодсистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan._ДемоОбменВРаспределеннойИнформационнойБазеСВнешнимиФайлами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникИнтерактивногоОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan._ДемоОбменВРаспределеннойИнформационнойБазе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ВыполнитьОбменДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role._ДемоДобавлениеИзменениеУзловПлановОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor._ДемоПереносСведенийОПользователяхВДругуюПрограмму</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule._ДемоОбменДаннымиСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменСБиблиотекойСтандартныхПодсистемЗарегистрироватьИзменениеДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменСБиблиотекойСтандартныхПодсистемЗарегистрироватьИзменение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменСБиблиотекойСтандартныхПодсистемЗарегистрироватьИзменениеНабораЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменСБиблиотекойСтандартныхПодсистемЗарегистрироватьУдаление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеЗарегистрироватьИзменение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеЗарегистрироватьИзменениеДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеЗарегистрироватьИзменениеНабораЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеЗарегистрироватьУдаление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеЗарегистрироватьИзменениеКонстанты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеСВнешнимиФайламиЗарегистрироватьИзменение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеСВнешнимиФайламиЗарегистрироватьИзменениеДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеСВнешнимиФайламиЗарегистрироватьИзменениеКонстанты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеСВнешнимиФайламиЗарегистрироватьИзменениеНабораЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеСВнешнимиФайламиЗарегистрироватьУдаление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan._ДемоОбменБезИспользованияПравилКонвертации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменБезИспользованияПравилКонвертацииЗарегистрироватьИзменение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменБезИспользованияПравилКонвертацииЗарегистрироватьИзменениеНабораЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменБезИспользованияПравилКонвертацииЗарегистрироватьУдаление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменБезИспользованияПравилКонвертацииЗарегистрироватьИзменениеДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption._ДемоИспользоватьСинхронизациюДанныхБСП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan._ДемоАвтономнаяРабота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоАвтономнаяРаботаЗарегистрироватьИзменение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоАвтономнаяРаботаЗарегистрироватьИзменениеДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоАвтономнаяРаботаЗарегистрироватьИзменениеКонстанты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоАвтономнаяРаботаЗарегистрироватьИзменениеНабораЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоАвтономнаяРаботаЗарегистрироватьУдаление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor._ДемоОбработчикиВыгрузкиВБиблиотекаСтандартныхПодсистем21</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor._ДемоОбработчикиЗагрузкиИзБиблиотекаСтандартныхПодсистем21</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant._ДемоУчитыватьНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption._ДемоУчитыватьНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоответствияОбъектовИнформационныхБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияОбменовДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОбменыДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьОбменыДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьРезультатыОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan._ДемоОбменСБиблиотекойСтандартныхПодсистем212</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменСБиблиотекойСтандартныхПодсистем212ЗарегистрироватьИзменение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменСБиблиотекойСтандартныхПодсистем212ЗарегистрироватьУдаление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменСБиблиотекойСтандартныхПодсистем212ЗарегистрироватьИзменениеДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant._ДемоИмяКонфигурацииВОбменеСБиблиотекойСтандартныхПодсистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоАвтономнаяРаботаЗарегистрироватьИзменениеНабораЗаписейРасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеЗарегистрироватьИзменениеНабораЗаписейРасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription._ДемоОбменВРаспределеннойИнформационнойБазеСВнешнимиФайламиЗарегистрироватьИзменениеНабораЗаписейРасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor._ДемоОбработчикиВыгрузкиВБиблиотекаСтандартныхПодсистем212</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor._ДемоОбработчикиЗагрузкиИзБиблиотекаСтандартныхПодсистем212</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor._ДемоПанельАдминистрирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture._ДемоРазделСинхронизацияДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельАдминистрированияБСП</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>_ДемоНастройкаСинхронизации</Subsystem>
+			<Subsystem>_ДемоПрефиксацияОбъектов</Subsystem>
+			<Subsystem>_ДемоОбъектыСинхронизации</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

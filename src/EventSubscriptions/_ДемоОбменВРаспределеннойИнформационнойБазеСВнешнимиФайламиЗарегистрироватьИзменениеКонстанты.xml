@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<EventSubscription uuid="62684f4c-cdaf-4955-a1cf-ddec0bc2836a">
+		<Properties>
+			<Name>_ДемоОбменВРаспределеннойИнформационнойБазеСВнешнимиФайламиЗарегистрироватьИзменениеКонстанты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демо обмен в распределенной информационной базе с внешними файлами зарегистрировать изменение константы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Source>
+				<v8:Type>cfg:ConstantValueManager.АлгоритмПодписи</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ПараметрыВариантовОтчетов</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.СписокЗапрещенныхРасширений</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИзменятьЗаданияЗаднимЧислом</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ПровайдерЭП</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьОбщиеДополнительныеРеквизитыИСведения</v8:Type>
+				<v8:Type>cfg:ConstantValueManager._ДемоОграничиватьДоступПоФизическимЛицам</v8:Type>
+				<v8:Type>cfg:ConstantValueManager._ДемоПоказыватьВнутренниеДанныеПодсистемВИнтерфейсе</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ОграничиватьДоступНаУровнеЗаписей</v8:Type>
+				<v8:Type>cfg:ConstantValueManager._ДемоОграничиватьДоступПоНоменклатуре</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьАнкетирование</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьЭлектронныеПодписи</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьДатуИВремяВСрокахЗадач</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьВнешнихПользователей</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьДополнительныеРеквизитыИСведения</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ТипПровайдераЭП</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.АлгоритмХеширования</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьГруппыПользователей</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ЗапрещатьЗагрузкуФайловПоРасширению</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьОбщиеДополнительныеЗначения</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.АлгоритмШифрования</v8:Type>
+				<v8:Type>cfg:ConstantValueManager._ДемоОграничиватьДоступПоПартнерам</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьБизнесПроцессыИЗадачи</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьВерсионированиеОбъектов</v8:Type>
+			</Source>
+			<Event>BeforeWrite</Event>
+			<Handler>CommonModule._ДемоОбменДаннымиСобытия._ДемоОбменВРаспределеннойИнформационнойБазеСВнешнимиФайламиЗарегистрироватьИзменениеКонстанты</Handler>
+		</Properties>
+	</EventSubscription>
+</MetaDataObject>

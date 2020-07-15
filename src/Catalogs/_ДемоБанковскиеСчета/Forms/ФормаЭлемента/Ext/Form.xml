@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="37">
+			<DataPath>Объект.Description</DataPath>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="123"/>
+		</InputField>
+		<InputField name="Владелец" id="63">
+			<DataPath>Объект.Owner</DataPath>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="64"/>
+			<ExtendedTooltip name="ВладелецExtendedTooltip" id="122"/>
+			<Events>
+				<Event name="OnChange">ВладелецПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаНомерВидВалюта" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер, вид счета, валюта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер, вид счета, валюта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерВидВалютаExtendedTooltip" id="124"/>
+			<ChildItems>
+				<InputField name="НомерСчета" id="9">
+					<DataPath>Объект.НомерСчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Wrap>false</Wrap>
+					<ContextMenu name="НомерСчетаКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="НомерСчетаExtendedTooltip" id="125"/>
+				</InputField>
+				<LabelField name="ВидСчета" id="17">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидСчетаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ВидСчетаExtendedTooltip" id="126"/>
+				</LabelField>
+				<InputField name="Валюта" id="7">
+					<DataPath>Объект.Валюта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ВалютаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ВалютаExtendedTooltip" id="127"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыExtendedTooltip" id="128"/>
+			<ChildItems>
+				<Page name="СтраницаБанк" id="84">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Банковские реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница банк</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаБанкExtendedTooltip" id="129"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаБанк" id="36">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Банк, в котором открыт счет</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Банк, в котором открыт счет.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаБанкExtendedTooltip" id="130"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаБИК" id="39">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа БИК</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа БИК</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаБИКExtendedTooltip" id="131"/>
+									<ChildItems>
+										<InputField name="БИКБанка" id="40">
+											<DataPath>БИКБанка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>БИК</v8:content>
+												</v8:item>
+											</Title>
+											<OpenButton>true</OpenButton>
+											<ContextMenu name="БИКБанкаКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="БИКБанкаExtendedTooltip" id="132"/>
+											<Events>
+												<Event name="OnChange">РеквизитБанкаПриИзменении</Event>
+												<Event name="StartChoice">БИКБанкаНачалоВыбора</Event>
+												<Event name="Opening">БИКБанкаОткрытие</Event>
+											</Events>
+										</InputField>
+										<CheckBoxField name="РучноеИзменениеРеквизитовБанка" id="79">
+											<DataPath>Объект.РучноеИзменениеРеквизитовБанка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Изменить реквизиты банка</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="РучноеИзменениеРеквизитовБанкаКонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="РучноеИзменениеРеквизитовБанкаExtendedTooltip" id="133"/>
+											<Events>
+												<Event name="OnChange">РучноеИзменениеРеквизитовБанкаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<Pages name="СостояниеБанка" id="106">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Состояние банка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Состояние банка</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="СостояниеБанкаExtendedTooltip" id="134"/>
+											<ChildItems>
+												<Page name="БанкЗакрыт" id="107">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Банк закрыт</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Банк закрыт</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="БанкЗакрытExtendedTooltip" id="135"/>
+													<ChildItems>
+														<LabelDecoration name="НадписьДеятельностьБанкаПрекращена" id="108">
+															<TextColor>style:ПросроченныеДанныеЦвет</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Деятельность этого банка прекращена</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьДеятельностьБанкаПрекращенаКонтекстноеМеню" id="109"/>
+															<ExtendedTooltip name="НадписьДеятельностьБанкаПрекращенаExtendedTooltip" id="136"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="БанкРаботает" id="110">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Банк работает</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Банк работает</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="БанкРаботаетExtendedTooltip" id="137"/>
+													<ChildItems>
+														<LabelDecoration name="ПустаяСтрока" id="113">
+															<ContextMenu name="ПустаяСтрокаКонтекстноеМеню" id="114"/>
+															<ExtendedTooltip name="ПустаяСтрокаExtendedTooltip" id="138"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="КоррСчетБанка" id="42">
+									<DataPath>КоррСчетБанка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Корр. счет</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Корр. счет банка,  в котором открыт счет</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ContextMenu name="КоррСчетБанкаКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="КоррСчетБанкаExtendedTooltip" id="139"/>
+								</InputField>
+								<InputField name="НаименованиеБанка" id="71">
+									<DataPath>НаименованиеБанка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование банка, в котором открыт счет</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ContextMenu name="НаименованиеБанкаКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="НаименованиеБанкаExtendedTooltip" id="140"/>
+								</InputField>
+								<InputField name="ГородБанка" id="73">
+									<DataPath>ГородБанка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Город</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Город банка, в котором открыт счет</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ContextMenu name="ГородБанкаКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="ГородБанкаExtendedTooltip" id="141"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ИспользуетсяБанкДляРасчетов" id="44">
+							<DataPath>ИспользуетсяБанкДляРасчетов</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Используется банк для непрямых расчетов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользуетсяБанкДляРасчетовКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ИспользуетсяБанкДляРасчетовExtendedTooltip" id="142"/>
+							<Events>
+								<Event name="OnChange">ИспользуетсяБанкДляРасчетовПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<Pages name="ПанельБанкаДляРасчетов" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Панель банка для расчетов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Панель банка для расчетов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ПанельБанкаДляРасчетовExtendedTooltip" id="143"/>
+							<ChildItems>
+								<Page name="ГруппаПрямыеРасчеты" id="60">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Прямые расчеты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа прямые расчеты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаПрямыеРасчетыExtendedTooltip" id="144"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация1" id="61">
+											<TextColor>web:SteelBlue</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Установите флажок "Используется банк для расчетов", если банк, в котором открыт счет, проводит платежи 
+через корреспондентский счет, открытый в другом банке (банке для расчетов).</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="62"/>
+											<ExtendedTooltip name="Декорация1ExtendedTooltip" id="145"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаНепрямыеРасчеты" id="59">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Непрямые расчеты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа непрямые расчеты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаНепрямыеРасчетыExtendedTooltip" id="146"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаБанкДляРасчетов" id="48">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Банк для непрямых расчетов</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа банк для расчетов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<ExtendedTooltip name="ГруппаБанкДляРасчетовExtendedTooltip" id="147"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаБИКБанкаДляРасчетов" id="49">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа БИКБанка для расчетов</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа БИКБанка для расчетов</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаБИКБанкаДляРасчетовExtendedTooltip" id="148"/>
+													<ChildItems>
+														<InputField name="БИКБанкаДляРасчетов" id="50">
+															<DataPath>БИКБанкаДляРасчетов</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>БИК</v8:content>
+																</v8:item>
+															</Title>
+															<OpenButton>true</OpenButton>
+															<ContextMenu name="БИКБанкаДляРасчетовКонтекстноеМеню" id="51"/>
+															<ExtendedTooltip name="БИКБанкаДляРасчетовExtendedTooltip" id="149"/>
+															<Events>
+																<Event name="OnChange">РеквизитБанкаПриИзменении</Event>
+																<Event name="StartChoice">БИКБанкаДляРасчетовНачалоВыбора</Event>
+																<Event name="Opening">БИКБанкаДляРасчетовОткрытие</Event>
+															</Events>
+														</InputField>
+														<CheckBoxField name="РучноеИзменениеРеквизитовБанкаДляРасчетов" id="81">
+															<DataPath>Объект.РучноеИзменениеРеквизитовБанкаДляРасчетов</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Изменить реквизиты банка</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="РучноеИзменениеРеквизитовБанкаДляРасчетовКонтекстноеМеню" id="82"/>
+															<ExtendedTooltip name="РучноеИзменениеРеквизитовБанкаДляРасчетовExtendedTooltip" id="150"/>
+															<Events>
+																<Event name="OnChange">РучноеИзменениеРеквизитовБанкаДляРасчетовПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+														<Pages name="СостояниеБанкаНепрямыхРасчетов" id="115">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Состояние банка непрямых расчетов</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страницы состояние банка</v8:content>
+																</v8:item>
+															</ToolTip>
+															<PagesRepresentation>None</PagesRepresentation>
+															<ExtendedTooltip name="СостояниеБанкаНепрямыхРасчетовExtendedTooltip" id="151"/>
+															<ChildItems>
+																<Page name="БанкНепрямыхРасчетовЗакрыт" id="116">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Банк непрямых расчетов закрыт</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Страница банк закрыт</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ExtendedTooltip name="БанкНепрямыхРасчетовЗакрытExtendedTooltip" id="152"/>
+																	<ChildItems>
+																		<LabelDecoration name="НадписьДеятельностьБанкаПрекращена1" id="117">
+																			<TextColor>style:ПросроченныеДанныеЦвет</TextColor>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Деятельность этого банка прекращена</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ContextMenu name="НадписьДеятельностьБанкаПрекращена1КонтекстноеМеню" id="118"/>
+																			<ExtendedTooltip name="НадписьДеятельностьБанкаПрекращена1ExtendedTooltip" id="153"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</Page>
+																<Page name="БанкНепрямыхРасчетовРаботает" id="119">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Банк непрямых расчетов работает</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Банк непрямых расчетов работает</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ExtendedTooltip name="БанкНепрямыхРасчетовРаботаетExtendedTooltip" id="154"/>
+																	<ChildItems>
+																		<LabelDecoration name="ПустаяСтрока1" id="120">
+																			<ContextMenu name="ПустаяСтрока1КонтекстноеМеню" id="121"/>
+																			<ExtendedTooltip name="ПустаяСтрока1ExtendedTooltip" id="155"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</Page>
+															</ChildItems>
+														</Pages>
+													</ChildItems>
+												</UsualGroup>
+												<InputField name="КоррСчетБанкаДляРасчетов" id="52">
+													<DataPath>КоррСчетБанкаДляРасчетов</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Корр. счет</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Корр. счет банка, в случае непрямых расчетов</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ContextMenu name="КоррСчетБанкаДляРасчетовКонтекстноеМеню" id="53"/>
+													<ExtendedTooltip name="КоррСчетБанкаДляРасчетовExtendedTooltip" id="156"/>
+												</InputField>
+												<InputField name="НаименованиеБанкаДляРасчетов" id="75">
+													<DataPath>НаименованиеБанкаДляРасчетов</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наименование</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наименование банка, в случае непрямых расчетов</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ContextMenu name="НаименованиеБанкаДляРасчетовКонтекстноеМеню" id="76"/>
+													<ExtendedTooltip name="НаименованиеБанкаДляРасчетовExtendedTooltip" id="157"/>
+												</InputField>
+												<InputField name="ГородБанкаДляРасчетов" id="77">
+													<DataPath>ГородБанкаДляРасчетов</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Город</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Город банка, в случае непрямых расчетов</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ContextMenu name="ГородБанкаДляРасчетовКонтекстноеМеню" id="78"/>
+													<ExtendedTooltip name="ГородБанкаДляРасчетовExtendedTooltip" id="158"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройкаПечати" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка печати платежных поручений</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройка печати</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНастройкаПечатиExtendedTooltip" id="159"/>
+					<ChildItems>
+						<TextDocumentField name="ТекстНазначенияПлатежа" id="90">
+							<DataPath>Объект.ТекстНазначенияПлатежа</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст назначения платежа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Height>5</Height>
+							<ContextMenu name="ТекстНазначенияПлатежаКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ТекстНазначенияПлатежаExtendedTooltip" id="160"/>
+						</TextDocumentField>
+						<UsualGroup name="Настройки" id="100">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="НастройкиExtendedTooltip" id="161"/>
+							<ChildItems>
+								<CheckBoxField name="МесяцПрописью" id="94">
+									<DataPath>Объект.МесяцПрописью</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="МесяцПрописьюКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="МесяцПрописьюExtendedTooltip" id="162"/>
+								</CheckBoxField>
+								<CheckBoxField name="ВыводитьСуммуБезКопеек" id="92">
+									<DataPath>Объект.ВыводитьСуммуБезКопеек</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВыводитьСуммуБезКопеекКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ВыводитьСуммуБезКопеекExtendedTooltip" id="163"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="101">
+			<DataPath>Объект.Комментарий</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<Height>2</Height>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="102"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="164"/>
+			<Events>
+				<Event name="StartChoice">КомментарийНачалоВыбора</Event>
+			</Events>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._ДемоБанковскиеСчета</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИспользуетсяБанкДляРасчетов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется банк для расчетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КоррСчетБанка" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корр счет банка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаименованиеБанка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование банка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГородБанка" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Город банка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаименованиеБанкаДляРасчетов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование банка для расчетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоррСчетБанкаДляРасчетов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корр счет банка для расчетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГородБанкаДляРасчетов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Город банка для расчетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РучноеИзменениеТекстаНаименованияОрганизации" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ручное изменение текста наименования организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БИКБанкаДляРасчетов" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БИКБанка для расчетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>9</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="БИКБанка" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БИКБанка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>9</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеятельностьБанкаПрекращена" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деятельность банка прекращена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеятельностьБанкаНепрямыхРасчетовПрекращена" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деятельность банка непрямых расчетов прекращена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

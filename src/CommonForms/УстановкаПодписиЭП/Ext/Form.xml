@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="ФормаВыбрать" id="14">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Выбрать</CommandName>
+				<ExtendedTooltip name="ФормаВыбратьExtendedTooltip" id="21"/>
+			</Button>
+			<Button name="ФормаОтмена" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="ФормаОтменаExtendedTooltip" id="22"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СертификатыЭП" id="3">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<Width>70</Width>
+			<SelectionMode>SingleRow</SelectionMode>
+			<RowSelectionMode>Row</RowSelectionMode>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СертификатыЭП</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СертификатыЭПКонтекстноеМеню" id="4">
+				<ChildItems>
+					<Button name="ТаблицаСертификатовКонтекстноеМенюОткрытьСертификат" id="20">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьСертификат</CommandName>
+						<ExtendedTooltip name="ТаблицаСертификатовКонтекстноеМенюОткрытьСертификатExtendedTooltip" id="23"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СертификатыЭПКоманднаяПанель" id="5"/>
+			<ExtendedTooltip name="СертификатыЭПРасширеннаяПодсказка" id="24"/>
+			<SearchStringAddition name="СертификатыЭПСтрокаПоиска" id="31">
+				<AdditionSource>
+					<Item>СертификатыЭП</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СертификатыЭПСтрокаПоискаКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="СертификатыЭПСтрокаПоискаРасширеннаяПодсказка" id="33"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СертификатыЭПСостояниеПросмотра" id="34">
+				<AdditionSource>
+					<Item>СертификатыЭП</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СертификатыЭПСостояниеПросмотраКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="СертификатыЭПСостояниеПросмотраРасширеннаяПодсказка" id="36"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СертификатыЭПУправлениеПоиском" id="37">
+				<AdditionSource>
+					<Item>СертификатыЭП</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СертификатыЭПУправлениеПоискомКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="СертификатыЭПУправлениеПоискомРасширеннаяПодсказка" id="39"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СертификатыЭПВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТаблицаСертификатовКомуВыдан" id="6">
+					<DataPath>СертификатыЭП.КомуВыдан</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<Width>30</Width>
+					<ContextMenu name="ТаблицаСертификатовКомуВыданКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ТаблицаСертификатовКомуВыданExtendedTooltip" id="25"/>
+				</InputField>
+				<InputField name="ТаблицаСертификатовКемВыдан" id="8">
+					<DataPath>СертификатыЭП.КемВыдан</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>15</Width>
+					<ContextMenu name="ТаблицаСертификатовКемВыданКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ТаблицаСертификатовКемВыданExtendedTooltip" id="26"/>
+				</InputField>
+				<InputField name="ТаблицаСертификатовДействителенДо" id="10">
+					<DataPath>СертификатыЭП.ДействителенДо</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ТаблицаСертификатовДействителенДоКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ТаблицаСертификатовДействителенДоExtendedTooltip" id="27"/>
+				</InputField>
+				<InputField name="ТаблицаСертификатовНазначение" id="12">
+					<DataPath>СертификатыЭП.Назначение</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСертификатовНазначениеКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ТаблицаСертификатовНазначениеExtendedTooltip" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Пароль" id="18">
+			<DataPath>Пароль</DataPath>
+			<Width>20</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<PasswordMode>true</PasswordMode>
+			<ContextMenu name="ПарольКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ПарольExtendedTooltip" id="29"/>
+		</InputField>
+		<InputField name="Комментарий" id="1">
+			<DataPath>Комментарий</DataPath>
+			<VerticalStretch>false</VerticalStretch>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="30"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Комментарий" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий к подписи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СертификатыЭП" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выберите сертификат электронной подписи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="КомуВыдан" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кому выдан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КемВыдан" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кем выдан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДействителенДо" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действителен до</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Назначение" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Отпечаток" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отпечаток</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Пароль" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выбрать</Action>
+		</Command>
+		<Command name="ОткрытьСертификат" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть сертификат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть сертификат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСертификат</Action>
+		</Command>
+	</Commands>
+</Form>

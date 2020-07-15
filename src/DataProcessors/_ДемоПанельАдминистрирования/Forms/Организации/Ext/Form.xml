@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Width>89</Width>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="2186">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="2264"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела" id="1561">
+					<Width>78</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление параметрами организаций.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="1562"/>
+					<ExtendedTooltip name="ОписаниеРазделаExtendedTooltip" id="2265"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияЗаголовка" id="2189">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ДекорацияЗаголовкаКонтекстноеМеню" id="2190"/>
+					<ExtendedTooltip name="ДекорацияЗаголовкаExtendedTooltip" id="2266"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаСправка" id="2191">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="2267"/>
+					<ChildItems>
+						<Button name="Справка" id="2192">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="2268"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа_ДемоОсновнаяОрганизация" id="2282">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>43</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа_ДемоОсновнаяОрганизацияРасширеннаяПодсказка" id="2283"/>
+			<ChildItems>
+				<InputField name="_ДемоОсновнаяОрганизация" id="2290">
+					<DataPath>НаборКонстант._ДемоОсновнаяОрганизация</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Демо: Основная организация</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<ContextMenu name="_ДемоОсновнаяОрганизацияКонтекстноеМеню" id="2291"/>
+					<ExtendedTooltip name="_ДемоОсновнаяОрганизацияРасширеннаяПодсказка" id="2292"/>
+					<Events>
+						<Event name="OnChange">_ДемоОсновнаяОрганизацияПриИзменении</Event>
+						<Event name="Clearing">_ДемоОсновнаяОрганизацияОчистка</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="ПояснениеИспользоватьНесколькоОрганизаций1" id="2287">
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная организация, которая используется в документах.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеИспользоватьНесколькоОрганизаций1КонтекстноеМеню" id="2288"/>
+					<ExtendedTooltip name="ПояснениеИспользоватьНесколькоОрганизаций1РасширеннаяПодсказка" id="2289"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИспользоватьНесколькоОрганизаций" id="2119">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использовать несколько организаций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использовать несколько организаций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>43</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИспользоватьНесколькоОрганизацийExtendedTooltip" id="2277"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьНесколькоОрганизаций" id="2120">
+					<DataPath>НаборКонстант.ИспользоватьНесколькоОрганизаций</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Несколько организаций</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьНесколькоОрганизацийКонтекстноеМеню" id="2121"/>
+					<ExtendedTooltip name="ИспользоватьНесколькоОрганизацийExtendedTooltip" id="2278"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьНесколькоОрганизацийПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="ПояснениеИспользоватьНесколькоОрганизаций" id="2127">
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возможность ведения нескольких организаций.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеИспользоватьНесколькоОрганизацийКонтекстноеМеню" id="2128"/>
+					<ExtendedTooltip name="ПояснениеИспользоватьНесколькоОрганизацийРасширеннаяПодсказка" id="2281"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РежимРаботы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+</Form>

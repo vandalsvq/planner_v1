@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DataProcessor uuid="5bd81a7a-319a-4b01-96ab-7dc402c0019e">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ИнструментыРазработчикаБазоваяФункциональностьРасстановкаФрагментовКода" category="Object">
+				<xr:TypeId>b4eecce7-8a21-428e-b59c-f0533d48c9fa</xr:TypeId>
+				<xr:ValueId>90af6296-89d4-43ec-b225-781ad58c3ffd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ИнструментыРазработчикаБазоваяФункциональностьРасстановкаФрагментовКода" category="Manager">
+				<xr:TypeId>1d6fea2c-2be4-4c6f-85ea-ca7d0654158c</xr:TypeId>
+				<xr:ValueId>0c8735ab-1837-406c-8ad6-2cd1fb17ebae</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ИнструментыРазработчикаБазоваяФункциональностьРасстановкаФрагментовКода</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструменты разработчика: Расстановка фрагментов кода подсистемы Базовая функциональность</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Инструмент разработчика для расстановки фрагментов кода внедрения подсистемы 'Базовая функциональность'</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor.ИнструментыРазработчикаБазоваяФункциональностьРасстановкаФрагментовКода.Form.ОсновнаяФорма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ОсновнаяФорма</Form>
+			<Form>ПараметрыАвторизации</Form>
+			<Command uuid="4d75f4eb-f590-4289-87f7-5ec47ec54e6a">
+				<Properties>
+					<Name>РасстановкаФрагментовКода</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расстановка фрагментов кода</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расстановка фрагментов кода для перехода на версию 2.2.3 (подсистема Базовая функциональность)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

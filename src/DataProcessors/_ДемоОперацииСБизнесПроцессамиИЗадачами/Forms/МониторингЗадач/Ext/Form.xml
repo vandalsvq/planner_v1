@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа" id="5">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаExtendedTooltip" id="16"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="6">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1ExtendedTooltip" id="17"/>
+					<ChildItems>
+						<Button name="УведомитьОПросроченныхЗадачах" id="1">
+							<Type>UsualButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.УведомитьОПросроченныхЗадачах</CommandName>
+							<ExtendedTooltip name="УведомитьОПросроченныхЗадачахExtendedTooltip" id="18"/>
+						</Button>
+						<Button name="УведомитьОНовыхЗадачах" id="2">
+							<Type>UsualButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.УведомитьОНовыхЗадачах</CommandName>
+							<ExtendedTooltip name="УведомитьОНовыхЗадачахExtendedTooltip" id="19"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="7">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2ExtendedTooltip" id="20"/>
+					<ChildItems>
+						<LabelDecoration name="Отступ" id="3">
+							<Width>3</Width>
+							<Height>1</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<ContextMenu name="ОтступКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ОтступРасширеннаяПодсказка" id="21"/>
+						</LabelDecoration>
+						<UsualGroup name="Группа3" id="11">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3ExtendedTooltip" id="22"/>
+							<ChildItems>
+								<LabelDecoration name="Пояснение" id="8">
+									<SkipOnInput>false</SkipOnInput>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Мониторинг задач и рассылка уведомлений по электронной почте
+выполняются автоматически с помощью регламентных заданий.
+Для рассылки используется системная учетная запись.
+
+Для того чтобы выполнить рассылку прямо сейчас,
+воспользуйтесь командами слева.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеКонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="23"/>
+								</LabelDecoration>
+								<Button name="СправочникУчетныеЗаписиЭлектроннойПочтыНастройкиСистемнойУчетнойЗаписи" id="26">
+									<Type>Hyperlink</Type>
+									<CommandName>Catalog.УчетныеЗаписиЭлектроннойПочты.Command.НастройкиСистемнойУчетнойЗаписи</CommandName>
+									<ExtendedTooltip name="СправочникУчетныеЗаписиЭлектроннойПочтыНастройкиСистемнойУчетнойЗаписиРасширеннаяПодсказка" id="27"/>
+								</Button>
+								<Button name="РегламентныеЗадания" id="10">
+									<Type>Hyperlink</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>DataProcessor.РегламентныеИФоновыеЗадания.StandardCommand.Open</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Открыть регламентные и фоновые задания</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="РегламентныеЗаданияExtendedTooltip" id="24"/>
+								</Button>
+								<Button name="ОбработкаЖурналРегистрацииЖурналРегистрации" id="15">
+									<Type>Hyperlink</Type>
+									<CommandName>DataProcessor.ЖурналРегистрации.Command.ЖурналРегистрации</CommandName>
+									<ExtendedTooltip name="ОбработкаЖурналРегистрацииЖурналРегистрацииExtendedTooltip" id="25"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="УведомитьОПросроченныхЗадачах" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомить о просроченных задачах</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомить о просроченных задачах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УведомитьОПросроченныхЗадачах</Action>
+		</Command>
+		<Command name="УведомитьОНовыхЗадачах" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомить о новых задачах</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомить о новых задачах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УведомитьОНовыхЗадачах</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="ОписаниеЗагруженныхОбъектов" id="26">
+			<DataPath>ОписаниеЗагруженныхОбъектов</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ОписаниеЗагруженныхОбъектовКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ОписаниеЗагруженныхОбъектовРасширеннаяПодсказка" id="28"/>
+		</LabelField>
+		<Button name="ПроверитьОбновлениеАдресногоКлассификатора" id="13">
+			<Type>UsualButton</Type>
+			<Width>17</Width>
+			<CommandName>Form.Command.ПроверитьОбновлениеАдресногоКлассификатора</CommandName>
+			<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+			<ExtendedTooltip name="ПроверитьОбновлениеАдресногоКлассификатораExtendedTooltip" id="19">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Проверить наличие обновлений адресных сведений
+на сайте поддержки пользователей 1С:Предприятия фирмы "1С"</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</Button>
+		<Button name="ЗагрузитьАдресныйКлассификатор" id="5">
+			<Type>UsualButton</Type>
+			<Width>17</Width>
+			<CommandName>Form.Command.ЗагрузитьАдресныйКлассификатор</CommandName>
+			<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+			<ExtendedTooltip name="ЗагрузитьАдресныйКлассификаторExtendedTooltip" id="22">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Перейти к загрузке адресного классификатора
+с сайта фирмы "1С", диска 1С:ИТС или из указанного каталога</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</Button>
+		<Button name="ОчиститьАдресныйКлассификатор" id="9">
+			<Type>UsualButton</Type>
+			<Width>17</Width>
+			<CommandName>Form.Command.ОчиститьАдресныйКлассификатор</CommandName>
+			<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+			<ExtendedTooltip name="ОчиститьАдресныйКлассификаторExtendedTooltip" id="25">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Удалить все сведения из адресного классификатора или выборочно,
+по указанным регионам</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ОписаниеЗагруженныхОбъектов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание загруженных объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьАдресныйКлассификатор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить адресный классификатор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьАдресныйКлассификатор</Action>
+		</Command>
+		<Command name="ОчиститьАдресныйКлассификатор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить адресный классификатор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьАдресныйКлассификатор</Action>
+		</Command>
+		<Command name="ПроверитьОбновлениеАдресногоКлассификатора" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить обновление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить обновлений адресных сведений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьОбновлениеАдресногоКлассификатора</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Width>60</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаКомандаОК" id="5">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<DefaultItem>true</DefaultItem>
+				<CommandName>Form.Command.КомандаОК</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ОК</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаКомандаОКExtendedTooltip" id="8"/>
+			</Button>
+			<Button name="ФормаОтмена" id="40">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="41"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="42">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки размещения, заданные Администратором этой базы:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="44"/>
+		</LabelDecoration>
+		<UsualGroup name="Группа1" id="32">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<Table name="НастройкиАдминистратораВыбор" id="10">
+					<Representation>List</Representation>
+					<SkipOnInput>true</SkipOnInput>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>НастройкиАдминистратораВыбор</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="НастройкиАдминистратораВыборКонтекстноеМеню" id="11"/>
+					<AutoCommandBar name="НастройкиАдминистратораВыборКоманднаяПанель" id="12"/>
+					<ExtendedTooltip name="НастройкиАдминистратораВыборРасширеннаяПодсказка" id="13"/>
+					<SearchStringAddition name="НастройкиАдминистратораВыборСтрокаПоиска" id="48">
+						<AdditionSource>
+							<Item>НастройкиАдминистратораВыбор</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НастройкиАдминистратораВыборСтрокаПоискаКонтекстноеМеню" id="49"/>
+						<ExtendedTooltip name="НастройкиАдминистратораВыборСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="НастройкиАдминистратораВыборСостояниеПросмотра" id="51">
+						<AdditionSource>
+							<Item>НастройкиАдминистратораВыбор</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НастройкиАдминистратораВыборСостояниеПросмотраКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="НастройкиАдминистратораВыборСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="НастройкиАдминистратораВыборУправлениеПоиском" id="54">
+						<AdditionSource>
+							<Item>НастройкиАдминистратораВыбор</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="НастройкиАдминистратораВыборУправлениеПоискомКонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="НастройкиАдминистратораВыборУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">НастройкиАдминистратораВыборВыбор</Event>
+						<Event name="BeforeAddRow">НастройкиАдминистратораВыборПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">НастройкиАдминистратораВыборПередУдалением</Event>
+						<Event name="BeforeRowChange">НастройкиАдминистратораВыборПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="НастройкиАдминистратораВыборИспользование" id="29">
+							<DataPath>НастройкиАдминистратораВыбор.Использование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НастройкиАдминистратораВыборИспользованиеКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="НастройкиАдминистратораВыборИспользованиеРасширеннаяПодсказка" id="31"/>
+						</CheckBoxField>
+						<ColumnGroup name="НастройкиАдминистратораВыборГруппа1" id="23">
+							<ExtendedTooltip name="НастройкиАдминистратораВыборГруппа1РасширеннаяПодсказка" id="24"/>
+							<ChildItems>
+								<ColumnGroup name="НастройкиАдминистратораВыборГруппа2" id="25">
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="НастройкиАдминистратораВыборГруппа2РасширеннаяПодсказка" id="26"/>
+									<ChildItems>
+										<InputField name="НастройкиАдминистратораВыборИмяОтчета" id="14">
+											<DataPath>НастройкиАдминистратораВыбор.ИмяОтчета</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="НастройкиАдминистратораВыборИмяОтчетаКонтекстноеМеню" id="15"/>
+											<ExtendedTooltip name="НастройкиАдминистратораВыборИмяОтчетаРасширеннаяПодсказка" id="16"/>
+										</InputField>
+										<InputField name="НастройкиАдминистратораВыборКлючВарианта" id="17">
+											<DataPath>НастройкиАдминистратораВыбор.КлючВарианта</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="НастройкиАдминистратораВыборКлючВариантаКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="НастройкиАдминистратораВыборКлючВариантаРасширеннаяПодсказка" id="19"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="НастройкиАдминистратораВыборПредставлениеНастройки" id="20">
+									<DataPath>НастройкиАдминистратораВыбор.ПредставлениеНастройки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="НастройкиАдминистратораВыборПредставлениеНастройкиКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="НастройкиАдминистратораВыборПредставлениеНастройкиРасширеннаяПодсказка" id="22"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="Группа2" id="34">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<Button name="УстановитьФлажки" id="36">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УстановитьФлажки</CommandName>
+							<ExtendedTooltip name="УстановитьФлажкиРасширеннаяПодсказка" id="37"/>
+						</Button>
+						<Button name="СнятьФлажки" id="38">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СнятьФлажки</CommandName>
+							<ExtendedTooltip name="СнятьФлажкиРасширеннаяПодсказка" id="39"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация2" id="45">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранные настройки будут добавлены к текущим настройкам, определенным в Конфигураторе.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="47"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НастройкиАдминистратораВыбор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки администратора выбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяОтчета" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КлючВарианта" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеНастройки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Использование" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИндексВИсходнойКоллекции" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс в исходной коллекции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НастройкиАдминистратора" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки администратора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОК</Action>
+		</Command>
+		<Command name="УстановитьФлажки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СнятьФлажки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>
